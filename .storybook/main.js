@@ -1,21 +1,21 @@
-/** @type { import('@storybook/react-webpack5').StorybookConfig } */
-const config = {
-  stories: [
-    "../stories/**/*.mdx",
-    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-  ],
-  addons: [
+module.exports = {
+  "stories": ["../src/**/*.@(mdx|stories.@(js))"],
+  "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
-    "@storybook/addon-interactions",
-  ],
+    "@storybook/theming"],
   framework: {
     name: "@storybook/react-webpack5",
-    options: {},
+    options: {}
   },
   docs: {
-    autodocs: "tag",
+    autodocs: true,
+    source: {
+      excludeDecorators: true,
+    },
   },
-};
-export default config;
+  features: {
+    legacyDecoratorFileOrder: true,
+  },
+  staticDirs: ['../public'],
+}
