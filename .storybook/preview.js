@@ -1,4 +1,3 @@
-import { themes } from '@storybook/theming'
 import React from 'react'
 import GlobalProvider from '../src/providers/GlobalProvider'
 
