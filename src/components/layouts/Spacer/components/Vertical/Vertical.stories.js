@@ -1,11 +1,11 @@
 import Vertical from './Vertical'
-import { options } from '../../constants'
-
 import {
   getTemplate,
   getListTemplate,
   getOptionsArgTypes,
 } from '../../../../../helpers/storybook'
+import { options } from '../../constants'
+
 
 const Template = getTemplate(Vertical)
 const ListTemplate = getListTemplate(Vertical)

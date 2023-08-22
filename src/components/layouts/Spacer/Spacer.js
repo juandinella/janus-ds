@@ -1,9 +1,9 @@
-import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './Spacer.styles'
+import React from 'react'
 import Horizontal from './components/Horizontal/Horizontal'
 import Vertical from './components/Vertical/Vertical'
 import { options } from './constants'
+import styles from './Spacer.styles'
 
 /**
  * Provides empty space.

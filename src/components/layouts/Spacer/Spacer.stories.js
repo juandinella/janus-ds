@@ -1,5 +1,5 @@
-import Spacer from './Spacer'
 import { options } from './constants'
+import Spacer from './Spacer'
 
 import {
   getTemplate,

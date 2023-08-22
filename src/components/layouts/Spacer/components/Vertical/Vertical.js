@@ -1,8 +1,8 @@
-import React from 'react'
 import PropTypes from 'prop-types'
-import spacerStyles from '../../Spacer.styles'
+import React from 'react'
 import styles from './Vertical.styles'
 import { options } from '../../constants'
+import spacerStyles from '../../Spacer.styles'
 
 /**
  * Spacer.Vertical

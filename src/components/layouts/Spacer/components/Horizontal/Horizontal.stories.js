@@ -1,11 +1,11 @@
 import Horizontal from './Horizontal'
-import { options } from '../../constants'
-
 import {
   getTemplate,
   getListTemplate,
   getOptionsArgTypes,
 } from '../../../../../helpers/storybook'
+import { options } from '../../constants'
+
 
 const Template = getTemplate(Horizontal)
 const ListTemplate = getListTemplate(Horizontal)
