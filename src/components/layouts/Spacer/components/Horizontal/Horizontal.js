@@ -1,5 +1,7 @@
+import isPropValid from '@emotion/is-prop-valid'
 import PropTypes from 'prop-types'
 import React from 'react'
+import styled from 'styled-components'
 import styles from './Horizontal.styles'
 import { options } from '../../constants'
 import spacerStyles from '../../Spacer.styles'
@@ -8,8 +10,12 @@ import spacerStyles from '../../Spacer.styles'
  * Spacer.Horizontal
  */
 
+const shouldForwardProp = (prop) => isPropValid(prop)
+const StyledSpacerHorizontal = styled.div.withConfig({shouldForwardProp})`${styles}`
+
+
 const Horizontal = ({ id, mobileSize, size, isPlayground }) => (
-  <div
+  <StyledSpacerHorizontal
     css={[spacerStyles, styles]}
     isPlayground={isPlayground}
     id={id}

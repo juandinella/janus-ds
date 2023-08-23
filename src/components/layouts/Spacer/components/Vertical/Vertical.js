@@ -1,15 +1,22 @@
+import isPropValid from '@emotion/is-prop-valid'
 import PropTypes from 'prop-types'
 import React from 'react'
+import styled from 'styled-components'
 import styles from './Vertical.styles'
 import { options } from '../../constants'
 import spacerStyles from '../../Spacer.styles'
+
 
 /**
  * Spacer.Vertical
  */
 
+const shouldForwardProp = (prop) => isPropValid(prop)
+const StyledSpacerVertical = styled.div.withConfig({shouldForwardProp})`${styles}`
+
+
 const Vertical = ({ id, mobileSize, size, height, isPlayground, maxHeight }) => (
-  <div
+  <StyledSpacerVertical
     css={[spacerStyles, styles]}
     isPlayground={isPlayground}
     id={id}
