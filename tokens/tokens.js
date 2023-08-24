@@ -115,7 +115,7 @@ const choices = {
 
   fontWeight: {
     light: 300,
-    normal: 400,
+    regular: 400,
     medium: 500,
     bold: 700,
   },
@@ -128,6 +128,21 @@ const choices = {
 const decisions = {
   textColor: {
     primary: choices.color.purple[500],
+    primaryDark: choices.color.purple[700],
+    primaryDarker: choices.color.purple[900],
+    neutralLighter: choices.color.neutral[50],
+    neutralLight: choices.color.neutral[600],
+    neutralDark: choices.color.neutral[800],
+    neutralDarker: choices.color.neutral[900],
+    disabled: choices.color.neutral[400],
+    error: choices.color.red[500],
+    errorDark: choices.color.red[800],
+    success: choices.color.green[600],
+    successDark: choices.color.green[700],
+    successDarker: choices.color.green[800],
+    warning: choices.color.yellow[300],
+    warningDark: choices.color.yellow[500],
+
   },
 }
 

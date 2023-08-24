@@ -2,6 +2,9 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
   /* Document
     ========================================================================== */
 
@@ -236,7 +239,7 @@ export const GlobalStyle = createGlobalStyle`
   textarea {
     margin: 0;
     background: transparent;
-    font-family: lato, sans-serif;
+    font-family: var(--system-ui);
     background: transparent;
   }
 
@@ -481,7 +484,7 @@ input[type=number] {
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: lato, sans-serif;
+    font-family: var(--system-ui);
     margin: 0;
     padding: 0;
     background: white;

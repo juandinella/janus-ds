@@ -17,9 +17,7 @@ const StyledSpacer = styled.div.withConfig({shouldForwardProp})`${styles}`
 
 const Spacer = ({ id, mobileSize, size, isPlayground }) => (
   <StyledSpacer
-    css={styles}
     id={id}
-    data-testid={id}
     size={size}
     mobileSize={mobileSize}
     isPlayground={isPlayground}
