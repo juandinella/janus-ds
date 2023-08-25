@@ -91,4 +91,18 @@ export default css`
       `
     }
   }}
+
+  ${(props) => {
+    if (props.direction) {
+      const [mobileDirection, desktopDirection] = props.direction.split(",").map(s => s.trim())
+
+      return css`
+        flex-direction: ${mobileDirection};
+
+        @media screen and (min-width: ${layout.breakpoints.sm}) {
+          flex-direction: ${desktopDirection || mobileDirection};
+        }
+      `
+    }
+  }}
 `
