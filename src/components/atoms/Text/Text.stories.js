@@ -31,6 +31,8 @@ export const Default = Template.bind({})
 
 export const Responsive = { args: { size: ['xs', 'xl'] } }
 
+export const LineClamp = { args: { lineClamp: 1 } }
+
 export const Sizes = ListTemplate.bind({})
 Sizes.args = { items: options.sizes.map((size) => ({ size })) }
 

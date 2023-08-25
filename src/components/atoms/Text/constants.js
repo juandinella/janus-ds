@@ -1,5 +1,5 @@
 export const options = {
-  sizes: ['xs', 'sm', 'md', 'lg', 'xl'],
+  sizes: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
   types: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'p'],
   weights: ['light', 'regular', 'medium', 'bold'],
   alignments: ['left', 'center', 'right'],

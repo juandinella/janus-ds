@@ -7,11 +7,11 @@ const avatarSizes = {
   `,
   md: css`
     --size: 38px;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
   `,
   lg: css`
     --size: 42px;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   `,
 }
 

@@ -53,4 +53,14 @@ export default css`
     css`
       text-transform: ${(props) => props.transform};
     `}
+
+  ${(props) =>
+    props.lineClamp &&
+    css`
+      display: -webkit-box;
+      line-clamp: ${(props) => props.lineClamp};
+      -webkit-line-clamp: ${(props) => props.lineClamp};
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    `}
 `

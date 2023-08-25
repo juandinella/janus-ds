@@ -106,11 +106,13 @@ const choices = {
   },
 
   fontSize: {
+    xxs: '0.625em',
     xs: '0.75em',
     sm: '0.8125em',
     md: '0.9375em',
-    lg: '1.125em',
-    xl: '1.5em',
+    lg: '1em',
+    xl: '1.125em',
+    xxl: '1.5em',
   },
 
   fontWeight: {
