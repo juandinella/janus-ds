@@ -142,7 +142,6 @@ const decisions = {
     successDarker: choices.color.green[800],
     warning: choices.color.yellow[300],
     warningDark: choices.color.yellow[500],
-
   },
 }
 
