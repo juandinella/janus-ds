@@ -298,3 +298,4 @@ storybook-static
 
 # --fix
 --fix/
+.vercel
