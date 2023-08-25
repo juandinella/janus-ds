@@ -241,6 +241,8 @@ export const GlobalStyle = createGlobalStyle`
     background: transparent;
     font-family: var(--system-ui);
     background: transparent;
+    font-size: 100%;
+    padding: 0;
   }
 
   button > svg { display: block; }

@@ -14,7 +14,7 @@ import Spacer from '../../layout/Spacer'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledSidebarItem = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledSidebarItem = styled.button.withConfig({shouldForwardProp})`${styles}`
 
 const getInitials = (name) => {
   const splitName = name.split(' ')
@@ -22,23 +22,24 @@ const getInitials = (name) => {
   return splitName[0][0] + splitName[1][0]
 }
 
-const SidebarItem = ({id, isOnline, username, lastMessage, lastSeen}) => {
+const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, onClick}) => {
   const avatarText = getInitials(username)
 
   return (
-  <StyledSidebarItem id={id}>
-    <Container flex alignItems="center">
+  <StyledSidebarItem id={id} onClick={onClick || null}>
+    <Container flex alignItems="center" space='xs'>
       <Avatar size='lg' isOnline={isOnline}>{avatarText}</Avatar>
       <Spacer size='12' />
       <Container>
         <Text weight='bold' size='sm'>{username}</Text>
         <Spacer size='4' />
         <Container flex alignItems="center">
-          <Text lineClamp='1' size='xs'>{lastMessage}</Text>
+          <Text weight={isUnread ? 'bold' : 'regular'} lineClamp='1' size='xs'>{lastMessage}</Text>
           <Text> - </Text>
           <Text size='xs'>{lastSeen}</Text>
         </Container>
       </Container>
+      {isUnread && <span className='badge'/> }
     </Container>
     </StyledSidebarItem>
   )

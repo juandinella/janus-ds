@@ -26,6 +26,7 @@ export default {
         username: 'Juan Di Nella',
         lastMessage: 'Hola, cómo estás?',
         lastSeen: '3w',
+        isUnread: true,
       },
     ],
   },

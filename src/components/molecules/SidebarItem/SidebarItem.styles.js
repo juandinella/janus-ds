@@ -1,5 +1,18 @@
 import { css } from 'styled-components'
 
 export default css`
-  display: flex;
+  width: 100%;
+  transition: background-color var(--transition-225);
+  border-radius: var(--border-radius-xs);
+
+  &:hover {
+    background-color: var(--bg-neutral);
+  }
+
+  .badge {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg-primary);
+    border-radius: 100%;
+  }
 `

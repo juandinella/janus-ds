@@ -14,6 +14,7 @@ export default {
     lastMessage: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     lastSeen: '3w',
     isOnline: true,
+    isUnread: true,
   },
   argTypes: {
   },
