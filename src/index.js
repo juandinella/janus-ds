@@ -1,4 +1,5 @@
 // Atom components
+export { default as Avatar } from './components/atoms/Avatar'
 export { default as Text } from './components/atoms/Text'
 
 // Layout components

@@ -98,6 +98,7 @@
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semi: 600;
   --font-weight-bold: 700;
 
   --transition-225: 225ms ease;
@@ -117,4 +118,27 @@
   --text-color-success-darker: #12533C;
   --text-color-warning: #FACE4F;
   --text-color-warning-dark: #F2980E;
+
+  --bg-base: #F4F1FF;
+  --bg-primary-lightest: #EDE5FF;
+  --bg-primary-lighter: #DBCEFF;
+  --bg-primary-light: #C1A7FF;
+  --bg-primary: #8118FF;
+  --bg-primary-dark: #7506FB;
+  --bg-neutral-lightest: #FAFAFA;
+  --bg-neutral: #F5F5F5;
+  --bg-neutral-dark: #E5E5E5;
+  --bg-neutral-darker: #525252;
+  --bg-neutral-darkest: #262626;
+  --bg-disabled: #E5E5E5;
+  --bg-error-lighter: #FDF3F3;
+  --bg-error-light: #FCE4E4;
+  --bg-error: #E45858;
+  --bg-error-dark: #902424;
+  --bg-success-light: #EEFBF4;
+  --bg-success: #2CB67D;
+  --bg-success-dark: #146849;
+  --bg-warning-light: #FFFBEB;
+  --bg-warning: #D77208;
+  --bg-warning-dark: #B24F0B;
 }
