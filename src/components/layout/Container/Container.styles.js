@@ -30,8 +30,6 @@ export default css`
       min-height: 100px;
     `}
 
-
-
   ${(props) => {
     const [gapColumnMobile, gapRowMobile] = parseTwoDimensionalSpacing(props.mobileGap)
     const [gapColumn, gapRow] = parseTwoDimensionalSpacing(props.gap)
@@ -75,6 +73,20 @@ export default css`
 
         @media screen and (min-width: ${layout.breakpoints.sm}) {
           justify-content: ${desktopJustifyContent || mobileJustifyContent};
+        }
+      `
+    }
+  }}
+
+  ${(props) => {
+    if (props.alignItems) {
+      const [mobileAlignItems, desktopAlignItems] = props.alignItems.split(",").map(s => s.trim())
+
+      return css`
+        align-items: ${mobileAlignItems};
+
+        @media screen and (min-width: ${layout.breakpoints.sm}) {
+          align-items: ${desktopAlignItems || mobileAlignItems};
         }
       `
     }

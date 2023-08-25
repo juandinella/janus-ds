@@ -26,6 +26,8 @@ export default css`
   text-transform: uppercase;
   height: var(--size);
   width: var(--size);
+  min-height: var(--size);
+  min-width: var(--size);
 
   ${(props) => props.size && avatarSizes[props.size]}
 
