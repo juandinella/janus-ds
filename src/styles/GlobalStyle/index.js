@@ -92,7 +92,8 @@ export const GlobalStyle = createGlobalStyle`
   a {
     background-color: transparent; /* 1 */
     -webkit-text-decoration-skip: objects; /* 2 */
-    text-decoration: none;
+    text-decoration: underline;
+    color: inherit;
   }
 
   /**

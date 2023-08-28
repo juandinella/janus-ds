@@ -35,7 +35,7 @@ const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, o
         <Spacer size='4' />
         <Container flex alignItems="center">
           <Text weight={isUnread ? 'bold' : 'regular'} lineClamp='1' size='xs'>{lastMessage}</Text>
-          <Text> - </Text>
+          <Text size='xs'> - </Text>
           <Text size='xs'>{lastSeen}</Text>
         </Container>
       </Container>

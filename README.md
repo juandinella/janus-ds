@@ -71,10 +71,8 @@ For this project an atom will be a component that is composed by an unique Atom 
 For this project a molecule is a component that is composed by at least 2 different atoms or stateful componentes
 
 #### Organism definition
-
 For this project organisms are assemblies of molecules functioning together as a unit
 ---
-
 ## Components Library Creation Guide
 
 ### Styling
