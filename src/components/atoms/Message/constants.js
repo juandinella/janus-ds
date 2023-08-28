@@ -1,4 +1,4 @@
 export const options = {
-  variants: ['outgoing', 'incoming'],
+  variants: ['incoming', 'outgoing'],
   positions: ['single', 'first', 'middle', 'last']
 }

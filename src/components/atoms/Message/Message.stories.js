@@ -1,5 +1,5 @@
-import Bubble from './Bubble'
 import { options } from './constants'
+import Message from './Message'
 
 import {
   getTemplate,
@@ -7,14 +7,14 @@ import {
   getOptionsArgTypes,
 } from '../../../helpers/storybook'
 
-const Template = getTemplate(Bubble)
-const ListTemplate = getListTemplate(Bubble)
+const Template = getTemplate(Message)
+const ListTemplate = getListTemplate(Message)
 
 export default {
-  title: 'Atoms/Bubble',
-  component: Bubble,
+  title: 'Atoms/Message',
+  component: Message,
   args: {
-    children: <>Soy un mensaje de prueba con <a href="https://ejemplo.com">un enlace</a></>,
+    children: 'Soy un mensaje de prueba',
     variant: 'incoming',
     position: 'single',
   },
