@@ -17,7 +17,7 @@
 
 ## Storybook live
 
-https://janus-droqr2c5i-juandi.vercel.app/
+https://janus-ds-juandi.vercel.app/?path=/docs/intro--docs
 
 ## Install and integration
 

@@ -4,6 +4,10 @@ import {
   getTemplate,
 } from '../../../helpers/storybook'
 
+import NewMessageButton from '../../atoms/NewMessageButton'
+import Search from '../../atoms/Search'
+import Container from '../../layout/Container'
+import Spacer from '../../layout/Spacer'
 import SidebarList from '../../molecules/SidebarList'
 
 
@@ -14,43 +18,51 @@ export default {
   component: SidebarContainer,
   args: {
     children: (
-      <SidebarList
-        sidebarList={[
-          {
-            isOnline: true,
-            isUnread: true,
-            lastMessage: 'Qué hacés papá?',
-            lastSeen: '1w',
-            username: 'Gonzalo Ricco'
-          },
-          {
-            isOnline: true,
-            lastMessage: 'This is a message',
-            lastSeen: '1w',
-            username: 'Pepe Pijudo'
-          },
-          {
-            lastMessage: 'Helloooo',
-            lastSeen: '1h',
-            username: 'Jason Miriapolis'
-          },
-          {
-            lastMessage: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
-            lastSeen: '1w',
-            username: 'Elmer Cadito'
-          },
-          {
-            lastMessage: 'Uti culiiii',
-            lastSeen: '1w',
-            username: 'Migue Granado'
-          },
-          {
-            lastMessage: 'Hola, cómo estás?',
-            lastSeen: '3w',
-            username: 'Juan Di Nella'
-          }
-        ]}
-      />
+      <>
+        <Container flex alignItems='center'>
+          <Search />
+          <Spacer size='12' />
+          <NewMessageButton />
+        </Container>
+        <Spacer size='32' />
+        <SidebarList
+          sidebarList={[
+            {
+              isOnline: true,
+              isUnread: true,
+              lastMessage: 'Qué hacés papá?',
+              lastSeen: '1w',
+              username: 'Gonzalo Ricco'
+            },
+            {
+              isOnline: true,
+              lastMessage: 'This is a message',
+              lastSeen: '1w',
+              username: 'Pepe Pijudo'
+            },
+            {
+              lastMessage: 'Helloooo',
+              lastSeen: '1h',
+              username: 'Jason Miriapolis'
+            },
+            {
+              lastMessage: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+              lastSeen: '1w',
+              username: 'Elmer Cadito'
+            },
+            {
+              lastMessage: 'Uti culiiii',
+              lastSeen: '1w',
+              username: 'Migue Granado'
+            },
+            {
+              lastMessage: 'Hola, cómo estás?',
+              lastSeen: '3w',
+              username: 'Juan Di Nella'
+            }
+          ]}
+        />
+      </>
     )
   },
   argTypes: {

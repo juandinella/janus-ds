@@ -29,7 +29,7 @@ const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, o
       <Container>
         <Text weight='bold' size='sm'>{username}</Text>
         <Spacer size='4' />
-        <Container flex alignItems="center">
+        <Container flex >
           <Text weight={isUnread ? 'bold' : 'regular'} lineClamp='1' size='xs' color='neutral-dark'>{lastMessage}</Text>
           <Text size='xs' color='neutral-dark'> - </Text>
           <Text size='xs' color='neutral-dark'>{lastSeen}</Text>

@@ -19,7 +19,7 @@ const StyledSidebarList = styled.div.withConfig({shouldForwardProp})`${styles}`
 const SidebarList = ({ id, sidebarList }) => {
   return (
     <StyledSidebarList id={id}>
-      <Container gap='xs' flex direction='column'>
+      <Container gap='xxs' flex direction='column'>
         {sidebarList.map(
           ({ id, lastMessage, username, avatarText, amount, isOnline, isUnread, lastSeen }) => (
             <SidebarItem

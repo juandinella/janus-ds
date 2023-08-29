@@ -5,6 +5,6 @@ export default css`
   width: 338px;
   min-width: 338px;
   max-width: 338px;
-  padding: 20px 10px;
+  padding: var(--spacing-md) var(--spacing-xs);
   overflow-y: auto;
 `
