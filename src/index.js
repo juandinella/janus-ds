@@ -1,5 +1,6 @@
 // Atom components
 export { default as Avatar } from './components/atoms/Avatar'
+export { default as Badge } from './components/atoms/Badge'
 export { default as Message } from './components/atoms/Message'
 export { default as DateDivisor } from './components/atoms/DateDivisor'
 export { default as Text } from './components/atoms/Text'

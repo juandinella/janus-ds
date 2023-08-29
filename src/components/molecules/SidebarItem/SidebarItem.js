@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import styles from './SidebarItem.styles'
 
 import Avatar from '../../atoms/Avatar'
+import Badge from '../../atoms/Badge'
 import Text from '../../atoms/Text'
 import Container from '../../layout/Container'
 import Spacer from '../../layout/Spacer'
@@ -39,7 +40,7 @@ const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, o
           <Text size='xs'>{lastSeen}</Text>
         </Container>
       </Container>
-      {isUnread && <span className='badge'/> }
+      {isUnread && <Badge/> }
     </Container>
     </StyledSidebarItem>
   )

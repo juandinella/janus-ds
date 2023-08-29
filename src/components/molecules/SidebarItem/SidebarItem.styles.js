@@ -9,10 +9,4 @@ export default css`
     background-color: var(--bg-neutral);
   }
 
-  .badge {
-    width: 10px;
-    height: 10px;
-    background-color: var(--bg-primary);
-    border-radius: 100%;
-  }
 `
