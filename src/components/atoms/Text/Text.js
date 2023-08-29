@@ -44,7 +44,7 @@ Text.propTypes = {
 
 Text.defaultProps = {
   type: 'p',
-  color: 'neutral-dark',
+  color: 'neutral-darker',
 }
 
 export default Text

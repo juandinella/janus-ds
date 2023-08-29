@@ -11,6 +11,7 @@ export { default as SidebarContainer } from './components/layout/SidebarContaine
 export { default as Spacer } from './components/layout/Spacer'
 
 // Molecules components
+export { default as Header } from './components/molecules/Header'
 export { default as MessageGroup } from './components/molecules/MessageGroup'
 export { default as SidebarItem } from './components/molecules/SidebarItem'
 export { default as SidebarList } from './components/molecules/SidebarList'

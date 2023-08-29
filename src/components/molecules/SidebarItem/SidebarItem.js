@@ -4,6 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 import styles from './SidebarItem.styles'
 
+import getInitials from '../../../utils/getInitials'
 import Avatar from '../../atoms/Avatar'
 import Badge from '../../atoms/Badge'
 import Text from '../../atoms/Text'
@@ -17,12 +18,6 @@ import Spacer from '../../layout/Spacer'
 const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledSidebarItem = styled.button.withConfig({shouldForwardProp})`${styles}`
 
-const getInitials = (name) => {
-  const splitName = name.split(' ')
-  if (splitName.length === 1) return splitName[0][0]
-  return splitName[0][0] + splitName[1][0]
-}
-
 const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, onClick}) => {
   const avatarText = getInitials(username)
 
@@ -35,9 +30,9 @@ const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, o
         <Text weight='bold' size='sm'>{username}</Text>
         <Spacer size='4' />
         <Container flex alignItems="center">
-          <Text weight={isUnread ? 'bold' : 'regular'} lineClamp='1' size='xs'>{lastMessage}</Text>
-          <Text size='xs'> - </Text>
-          <Text size='xs'>{lastSeen}</Text>
+          <Text weight={isUnread ? 'bold' : 'regular'} lineClamp='1' size='xs' color='neutral-dark'>{lastMessage}</Text>
+          <Text size='xs' color='neutral-dark'> - </Text>
+          <Text size='xs' color='neutral-dark'>{lastSeen}</Text>
         </Container>
       </Container>
       {isUnread && <Badge/> }

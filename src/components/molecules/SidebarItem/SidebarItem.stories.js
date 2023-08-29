@@ -13,11 +13,13 @@ export default {
     username: 'Gonzalo Ricco',
     lastMessage: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     lastSeen: '3w',
-    isOnline: true,
-    isUnread: true,
   },
   argTypes: {
   },
 }
 
 export const Default = Template.bind({})
+
+export const IsOnline = { args: { isOnline: true } }
+
+export const IsUnread = { args: { isUnread: true } }
