@@ -8,5 +8,4 @@ export default css`
   &:hover {
     background-color: var(--bg-neutral);
   }
-
 `

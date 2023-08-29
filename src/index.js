@@ -6,7 +6,8 @@ export { default as DateDivisor } from './components/atoms/DateDivisor'
 export { default as Text } from './components/atoms/Text'
 
 // Layout components
-export { default as Container } from './components/layout/Spacer'
+export { default as Container } from './components/layout/Container'
+export { default as SidebarContainer } from './components/layout/SidebarContainer'
 export { default as Spacer } from './components/layout/Spacer'
 
 // Molecules components

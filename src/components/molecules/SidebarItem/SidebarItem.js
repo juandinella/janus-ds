@@ -54,7 +54,6 @@ SidebarItem.propTypes = {
 }
 
 SidebarItem.defaultProps = {
-
 }
 
 export default SidebarItem
