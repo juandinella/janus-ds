@@ -44,11 +44,18 @@ const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, o
 SidebarItem.displayName = 'SidebarItem'
 
 SidebarItem.propTypes = {
-  /** Container's id */
   id: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  isUnread: PropTypes.bool.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  lastSeen: PropTypes.string.isRequired,
+  lastMessage: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 SidebarItem.defaultProps = {
+  isOnline: false,
+  isUnread: false
 }
 
 export default SidebarItem

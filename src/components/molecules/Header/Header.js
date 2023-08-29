@@ -23,7 +23,7 @@ const Header = ({ id, username, isOnline, lastSeen }) => {
   const avatarText = getInitials(username)
   return(
     <StyledHeader id={id}>
-      <Container flex alignItems="center" space='xs'>
+      <Container flex alignItems="center">
       <Avatar size='md' isOnline={isOnline}>{avatarText}</Avatar>
       <Spacer size='12' />
       <Container>
@@ -41,11 +41,14 @@ const Header = ({ id, username, isOnline, lastSeen }) => {
 Header.displayName = 'Header'
 
 Header.propTypes = {
-  /** Component id */
   id: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  username: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  lastSeen: PropTypes.string.isRequired
 }
 
-Header.defaultProps = {}
+Header.defaultProps = {
+  isOnline: false
+}
 
 export default Header
