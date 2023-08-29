@@ -5,6 +5,7 @@ export { default as Message } from './components/atoms/Message'
 export { default as DateDivisor } from './components/atoms/DateDivisor'
 export { default as NewMessageButton } from './components/atoms/NewMessageButton'
 export { default as Search } from './components/atoms/Search'
+export { default as SendButton } from './components/atoms/SendButton'
 export { default as Text } from './components/atoms/Text'
 
 // Layout components
