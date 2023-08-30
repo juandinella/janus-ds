@@ -3,7 +3,9 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/theming"],
+    "@storybook/theming",
+    "@storybook/addon-actions"
+  ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {}

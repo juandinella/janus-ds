@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 const bubbleVariants = {
   incoming: css`
     color: var(--text-color-neutral-lighter);
-    background-color: var(--bg-primary-dark);
+    background-color: var(--color-purple-500);
   `,
   outgoing: css`
     color: var(--text-color-neutral-darker);

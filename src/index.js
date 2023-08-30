@@ -1,6 +1,7 @@
 // Atom components
 export { default as Avatar } from './components/atoms/Avatar'
 export { default as Badge } from './components/atoms/Badge'
+export { default as ContentEditable } from './components/atoms/ContentEditable'
 export { default as Message } from './components/atoms/Message'
 export { default as DateDivisor } from './components/atoms/DateDivisor'
 export { default as NewMessageButton } from './components/atoms/NewMessageButton'
@@ -17,6 +18,7 @@ export { default as Spacer } from './components/layout/Spacer'
 // Molecules components
 export { default as Header } from './components/molecules/Header'
 export { default as MessageGroup } from './components/molecules/MessageGroup'
+export { default as MessageInput } from './components/molecules/MessageInput'
 export { default as SidebarItem } from './components/molecules/SidebarItem'
 export { default as SidebarList } from './components/molecules/SidebarList'
 

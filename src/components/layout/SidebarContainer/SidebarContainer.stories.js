@@ -20,7 +20,7 @@ export default {
     children: (
       <>
         <Container flex alignItems='center'>
-          <Search />
+          <Search placeholder='Buscá lo quieras' />
           <Spacer size='12' />
           <NewMessageButton />
         </Container>
