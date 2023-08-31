@@ -7,7 +7,7 @@ import {
 const Template = getTemplate(ContentEditable)
 
 export default {
-  title: 'Atoms/ContentEditable',
+  title: 'Molecules/ContentEditable',
   component: ContentEditable,
   args: {
     children: 'Soy un text',

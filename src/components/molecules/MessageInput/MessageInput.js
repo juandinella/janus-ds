@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import React, { useRef } from 'react'
 import styled from 'styled-components'
 import styles from './MessageInput.styles'
-import ContentEditable from '../../atoms/ContentEditable'
 import SendButton from '../../atoms/SendButton'
 import Container from '../../layout/Container'
 import Spacer from '../../layout/Spacer'
+import ContentEditable from '../ContentEditable'
 
 const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledMessageInput = styled.div.withConfig({ shouldForwardProp })`${styles}`
@@ -14,10 +14,11 @@ const StyledMessageInput = styled.div.withConfig({ shouldForwardProp })`${styles
 const MessageInput = ({ onSendMessage }) => {
   const ref = useRef(null)
 
-  const handleSendClick = () => {
+  const sendMessage = () => {
     if (ref.current) {
-      const message = ref.current.innerHTML.trim()
-
+      let message = ref.current.innerHTML
+      message = message.replace(/<br\s*\/?>/g, '\n').replace(/&nbsp;/g, ' ')
+      message = message.trim()
       if (message.length > 0) {
         onSendMessage(message)
         ref.current.innerHTML = ''
@@ -25,14 +26,26 @@ const MessageInput = ({ onSendMessage }) => {
     }
   }
 
+  const handleSendClick = () => {
+    sendMessage()
+  }
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault()
+      sendMessage()
+    }
+  }
+
   return (
     <StyledMessageInput>
-      <Container flex>
+      <Container flex alignItems='flex-end'>
         <ContentEditable
           ref={ref}
           ariaLabel="Escribe un mensaje"
+          onKeyDown={handleKeyDown}
         />
-        <Spacer size='12' />
+        <Spacer size="12" />
         <SendButton onClick={handleSendClick} />
       </Container>
     </StyledMessageInput>

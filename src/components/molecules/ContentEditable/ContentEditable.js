@@ -7,7 +7,7 @@ import styles from './ContentEditable.styles'
 const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledContentEditable = styled.div.withConfig({ shouldForwardProp })`${styles}`
 
-const ContentEditable = React.forwardRef(({ ariaLabel, onBlur, onChange }, ref) => {
+const ContentEditable = React.forwardRef(({ ariaLabel, onBlur, onChange, onKeyDown }, ref) => {
 
   const handleBlur = () => {
     if (ref && ref.current && onBlur) {
@@ -30,6 +30,7 @@ const ContentEditable = React.forwardRef(({ ariaLabel, onBlur, onChange }, ref) 
       aria-label={ariaLabel}
       onBlur={handleBlur}
       onInput={handleChange}
+      onKeyDown={onKeyDown}
     />
   )
 })

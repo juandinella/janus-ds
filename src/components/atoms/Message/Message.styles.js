@@ -46,6 +46,7 @@ export default css`
   padding: var(--spacing-xxs) var(--spacing-xs);
   font-size: var(--font-size-md);
   max-width: 604px;
+  white-space: pre-line;
 
   ${(props) => props.variant && bubbleVariants[props.variant]}
   ${(props) => {

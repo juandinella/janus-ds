@@ -144,7 +144,7 @@
     "no-caller": "error",
     "no-catch-shadow": "error",
     "no-confusing-arrow": "off",
-    "no-console": "warn",
+    "no-console": "off",
     "no-continue": "error",
     "no-debugger": "warn",
     "no-div-regex": "error",

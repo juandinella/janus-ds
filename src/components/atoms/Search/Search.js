@@ -12,7 +12,7 @@ import styles from './Search.styles'
 const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledSearch = styled.label.withConfig({shouldForwardProp})`${styles}`
 
-const Search = ({ id, value, name, placeholder, onChange, children }) => {
+const Search = ({ id, value, name, placeholder, onChange }) => {
   return (
     <StyledSearch id={id} htmlFor={id}>
       <span className='search-icon'>
@@ -21,7 +21,7 @@ const Search = ({ id, value, name, placeholder, onChange, children }) => {
           <path fillRule="evenodd" clipRule="evenodd" d="M10.3929 10.3929C10.7834 10.0023 11.4166 10.0023 11.8071 10.3929L14.7071 13.2929C15.0976 13.6834 15.0976 14.3166 14.7071 14.7071C14.3166 15.0976 13.6834 15.0976 13.2929 14.7071L10.3929 11.8071C10.0024 11.4166 10.0024 10.7834 10.3929 10.3929Z" fill="#404040"/>
         </svg>
       </span>
-      <input type='search' value={value} name={name} placeholder={placeholder} onChange={onChange}>{children}</input>
+      <input type='search' value={value} name={name} placeholder={placeholder} onChange={onChange} />
     </StyledSearch>
   )
 }
@@ -34,7 +34,6 @@ Search.propTypes = {
   value: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  children: PropTypes.node.isRequired,
 }
 
 Search.defaultProps = {}

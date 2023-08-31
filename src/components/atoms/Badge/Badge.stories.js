@@ -6,7 +6,6 @@ import {
 
 const Template = getTemplate(Badge)
 
-
 export default {
   title: 'Atoms/Badge',
   component: Badge,

@@ -23,6 +23,7 @@ export default {
   },
   argTypes: {
   },
+  parameters: { __sb: { h: '100px' } },
 }
 
 export const Default = Template.bind({})

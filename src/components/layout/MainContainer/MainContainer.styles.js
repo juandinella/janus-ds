@@ -1,9 +1,10 @@
 import { css } from 'styled-components'
 
 export default css`
+  background-color: white;
+  flex: 3;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
   width: 100%;
-  margin: var(--spacing-xs) 0;
 `

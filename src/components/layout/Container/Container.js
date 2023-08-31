@@ -2,7 +2,6 @@ import isPropValid from '@emotion/is-prop-valid'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import { options } from './constants'
 import styles from './Container.styles'
 
 /**

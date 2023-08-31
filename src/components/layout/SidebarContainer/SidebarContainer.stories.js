@@ -65,9 +65,8 @@ export default {
       </>
     )
   },
-  argTypes: {
-
-  },
+  argTypes: {},
+  parameters: { __sb: { h: '500px' } },
 }
 
 export const Default = Template.bind({})
