@@ -28,7 +28,7 @@ const SidebarList = ({ id, sidebarList }) => {
               username={username}
               lastMessage={lastMessage}
               isOnline={isOnline}
-              lastSeen
+              lastSeen={lastSeen}
               isUnread={isUnread}
             />
           )
