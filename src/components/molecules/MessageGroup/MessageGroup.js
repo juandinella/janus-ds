@@ -1,6 +1,6 @@
 import isPropValid from '@emotion/is-prop-valid'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { options } from './constants'
 import styles from './MessageGroup.styles'
@@ -18,6 +18,17 @@ const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledMessageGroup = styled.div.withConfig({shouldForwardProp})`${styles}`
 
 const MessageGroup = ({ direction, messages }) => {
+  const lastMessageRef = useRef(null)
+
+  useEffect(() => {
+    if (lastMessageRef.current) {
+      setTimeout(() => {
+        lastMessageRef.current.scrollIntoView({ behavior: 'smooth' })
+      }, 0)
+    }
+  }, [messages])
+
+
   const calculatePosition = (index, arrayLength) => {
   switch (true) {
     case arrayLength === 1:
@@ -43,6 +54,7 @@ const MessageGroup = ({ direction, messages }) => {
         <Container flex direction='column' gap='xxxs' alignItems={direction === 'incoming' ? 'flex-start': 'flex-end'}>
           {messages.map((message, index) => (
             <Message
+              ref={index === messages.length - 1 ? lastMessageRef : null}
               key={message.id}
               id={message.id}
               variant={direction}
@@ -51,6 +63,7 @@ const MessageGroup = ({ direction, messages }) => {
               {message.children}
             </Message>
           ))}
+          <Spacer size='16'/>
         </Container>
       </Container>
     </StyledMessageGroup>

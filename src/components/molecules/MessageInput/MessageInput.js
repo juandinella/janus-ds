@@ -18,6 +18,7 @@ const MessageInput = ({ onSendMessage }) => {
     if (ref.current) {
       let message = ref.current.innerHTML
       message = message.replace(/<br\s*\/?>/g, '\n').replace(/&nbsp;/g, ' ')
+      message = message.replace(/<\/?[^>]+(>|$)/g, "")
       message = message.trim()
       if (message.length > 0) {
         onSendMessage(message)
@@ -25,6 +26,7 @@ const MessageInput = ({ onSendMessage }) => {
       }
     }
   }
+
 
   const handleSendClick = () => {
     sendMessage()

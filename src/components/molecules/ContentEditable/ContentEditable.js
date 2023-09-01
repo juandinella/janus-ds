@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import isPropValid from '@emotion/is-prop-valid'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -21,6 +22,35 @@ const ContentEditable = React.forwardRef(({ ariaLabel, onBlur, onChange, onKeyDo
     }
   }
 
+  const scrollToBottom = () => {
+    if (ref && ref.current) {
+      ref.current.scrollTop = ref.current.scrollHeight
+    }
+  }
+
+  const handlePaste = (e) => {
+    e.preventDefault()
+
+    const text = e.clipboardData.getData('text/plain')
+
+    const selection = window.getSelection()
+    const range = selection.getRangeAt(0)
+
+    selection.deleteFromDocument()
+
+    const textNode = document.createTextNode(text)
+    range.insertNode(textNode)
+
+    range.setStartAfter(textNode)
+    range.setEndAfter(textNode)
+
+    selection.removeAllRanges()
+    selection.addRange(range)
+
+    scrollToBottom()
+  }
+
+
   return (
     <StyledContentEditable
       ref={ref}
@@ -31,6 +61,8 @@ const ContentEditable = React.forwardRef(({ ariaLabel, onBlur, onChange, onKeyDo
       onBlur={handleBlur}
       onInput={handleChange}
       onKeyDown={onKeyDown}
+      onPaste={handlePaste}
+      spellCheck={false}
     />
   )
 })

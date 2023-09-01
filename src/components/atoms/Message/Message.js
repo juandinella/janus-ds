@@ -5,17 +5,20 @@ import styled from 'styled-components'
 import { options } from './constants'
 import styles from './Message.styles'
 
-
 /**
  * Message
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMessage = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledMessage = styled.div.withConfig({ shouldForwardProp })`${styles}`
 
-const Message = ({ id, variant, position, children }) => {
-  return <StyledMessage id={id} variant={variant} position={position}>{children}</StyledMessage>
-}
+const Message = React.forwardRef(({ id, variant, position, children }, ref) => {
+  return (
+    <StyledMessage ref={ref} id={id} variant={variant} position={position}>
+      {children}
+    </StyledMessage>
+  )
+})
 
 Message.displayName = 'Message'
 
@@ -26,7 +29,7 @@ Message.propTypes = {
 }
 
 Message.defaultProps = {
-  position: 'single'
+  position: 'single',
 }
 
 export default Message
