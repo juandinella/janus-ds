@@ -63,8 +63,8 @@ const MessageGroup = ({ direction, messages }) => {
               {message.children}
             </Message>
           ))}
-          <Spacer size='16'/>
         </Container>
+        <Spacer size='16'/>
       </Container>
     </StyledMessageGroup>
   )
