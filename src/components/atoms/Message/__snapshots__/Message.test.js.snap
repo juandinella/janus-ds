@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Message Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 icJxvT"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message First Incoming 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 eWIfgY"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message First Outgoing 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 jAQuAw"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message Last Incoming 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 bYkkQs"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message Last Outgoing 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 eQjGtc"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message Middle Incoming 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 iKeVdU"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message Middle Outgoing 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 ldGngw"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message Single Incoming 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 icJxvT"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message Single Outgoing 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 jDVsaL"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Message Variants 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kelln5-0 icJxvT"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+  <div
+    className="sc-1kelln5-0 jDVsaL"
+    data-testid="test"
+    id="test"
+  >
+    <span
+      data-testid="test-children"
+    >
+      Soy un mensaje de prueba
+    </span>
+  </div>
+</div>
+`;

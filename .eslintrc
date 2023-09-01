@@ -3,7 +3,8 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
@@ -25,6 +26,33 @@
     "*.json",
     "scripts",
     "jsx-a11y"
+  ],
+  "overrides": [
+    {
+      "files": ["*stories.*", "**/__mocks__/**"],
+      "rules": {
+        "import/no-anonymous-default-export": "off",
+        "import/no-default-export": "off"
+      }
+    },
+    {
+      "env": {
+        "jest": true
+      },
+      "extends": [
+        "plugin:testing-library/react",
+        "plugin:jest-dom/recommended"
+      ],
+      "files": ["**/__tests__/**", "**/__mocks__/**"],
+      "rules": {
+        "testing-library/no-render-in-setup": "error",
+        "testing-library/no-wait-for-empty-callback": "error",
+        "testing-library/prefer-explicit-assert": "error",
+        "testing-library/prefer-presence-queries": "error",
+        "testing-library/prefer-screen-queries": "error",
+        "testing-library/prefer-wait-for": "error"
+      }
+    }
   ],
   "parserOptions": {
     "ecmaFeatures": {

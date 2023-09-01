@@ -17,6 +17,7 @@ export default {
     children: 'Soy un mensaje de prueba',
     variant: 'incoming',
     position: 'single',
+    id: 'test'
   },
   argTypes: {
     ...getOptionsArgTypes(options.variants, 'variant'),
@@ -28,7 +29,6 @@ export const Default = Template.bind({})
 
 export const Variants = ListTemplate.bind({})
 Variants.args = { items: options.variants.map((variant) => ({ variant })) }
-
 
 export const SingleIncoming = { args: { variant: 'incoming', position: 'single' } }
 export const SingleOutgoing = { args: { variant: 'outgoing', position: 'single' } }

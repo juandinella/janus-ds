@@ -11,11 +11,10 @@ export default {
   title: 'Atoms/DateDivisor',
   component: DateDivisor,
   args: {
-    children: 'Aug 3, 2023, 11:45 AM'
+    children: 'Aug 3, 2023, 11:45 AM',
+    id: 'test'
   },
-  argTypes: {
-
-  },
+  argTypes: {},
 }
 
 export const Default = Template.bind({})

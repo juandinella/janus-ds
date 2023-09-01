@@ -10,10 +10,16 @@ import { options } from './constants'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledAvatar = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledAvatar = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const Avatar = ({ id, size, isOnline, children }) => {
-  return <StyledAvatar id={id} size={size} isOnline={isOnline}>{children}</StyledAvatar>
+  return (
+    <StyledAvatar id={id} data-testid={id} size={size} isOnline={isOnline}>
+      <span data-testid={`${id}-children`}>{children}</span>
+    </StyledAvatar>
+  )
 }
 
 Avatar.displayName = 'Avatar'

@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Avatar Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-odj6ky-0 hcSgNG"
+    size="md"
+  >
+    <span
+      data-testid="undefined-children"
+    >
+      gr
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Avatar Online 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-odj6ky-0 bULrQs"
+    size="lg"
+  >
+    <span
+      data-testid="undefined-children"
+    >
+      gr
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Avatar Sizes 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-odj6ky-0 lojJIv"
+    size="sm"
+  >
+    <span
+      data-testid="undefined-children"
+    >
+      gr
+    </span>
+  </div>
+  <div
+    className="sc-odj6ky-0 hcSgNG"
+    size="md"
+  >
+    <span
+      data-testid="undefined-children"
+    >
+      gr
+    </span>
+  </div>
+  <div
+    className="sc-odj6ky-0 cUplmE"
+    size="lg"
+  >
+    <span
+      data-testid="undefined-children"
+    >
+      gr
+    </span>
+  </div>
+</div>
+`;

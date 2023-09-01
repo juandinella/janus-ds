@@ -21,16 +21,14 @@ const SidebarList = ({ id, sidebarList }) => {
     <StyledSidebarList id={id}>
       <Container gap='xxs' flex direction='column'>
         {sidebarList.map(
-          ({ id, lastMessage, username, avatarText, amount, isOnline, isUnread, lastSeen }) => (
+          ({ id, lastMessage, username, isOnline, isUnread, lastSeen }) => (
             <SidebarItem
               key={id}
               id={id}
-              avatarText={avatarText}
               username={username}
-              amount={amount}
               lastMessage={lastMessage}
               isOnline={isOnline}
-              lastSeen={lastSeen}
+              lastSeen
               isUnread={isUnread}
             />
           )

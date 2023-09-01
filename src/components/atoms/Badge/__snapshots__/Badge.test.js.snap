@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Badge Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-2gfkx2-0 kuaYtC"
+  />
+</div>
+`;

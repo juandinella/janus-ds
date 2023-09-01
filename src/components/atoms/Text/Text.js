@@ -13,7 +13,21 @@ const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledText = styled.p.withConfig({shouldForwardProp})`${styles}`
 
 const Text = ({ id, type, size, weight, alignment, transform, color, lineClamp, children}) => {
-  return <StyledText id={id} as={type} size={size} weight={weight} alignment={alignment} transform={transform} lineClamp={lineClamp} color={color}>{children}</StyledText>
+  return (
+    <StyledText
+      id={id}
+      data-testid={id}
+      as={type}
+      size={size}
+      weight={weight}
+      alignment={alignment}
+      transform={transform}
+      lineClamp={lineClamp}
+      color={color}
+    >
+      {children}
+    </StyledText>
+  )
 }
 
 Text.displayName = 'Text'

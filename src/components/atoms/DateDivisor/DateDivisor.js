@@ -13,7 +13,11 @@ const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledDateDivisor = styled.div.withConfig({shouldForwardProp})`${styles}`
 
 const DateDivisor = ({ id, children }) => {
-  return <StyledDateDivisor id={id}><Text type='span' size='xs'>{children}</Text></StyledDateDivisor>
+  return (
+    <StyledDateDivisor id={id} data-testid={id}>
+      <Text data-testid={`${id}-children`} type='span' size='xs'>{children}</Text>
+    </StyledDateDivisor>
+  )
 }
 
 DateDivisor.displayName = 'DateDivisor'

@@ -10,12 +10,20 @@ import styles from './Message.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMessage = styled.div.withConfig({ shouldForwardProp })`${styles}`
+const StyledMessage = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const Message = React.forwardRef(({ id, variant, position, children }, ref) => {
   return (
-    <StyledMessage ref={ref} id={id} variant={variant} position={position}>
-      {children}
+    <StyledMessage
+      ref={ref}
+      id={id}
+      data-testid={id}
+      variant={variant}
+      position={position}
+    >
+      <span data-testid={`${id}-children`}>{children}</span>
     </StyledMessage>
   )
 })

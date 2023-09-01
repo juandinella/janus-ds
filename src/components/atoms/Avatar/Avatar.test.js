@@ -1,27 +1,28 @@
 import initStoryshots from '@storybook/addon-storyshots'
 import { render, screen, cleanup } from '@testing-library/react'
 import React from 'react'
-import DateDivisor from './DateDivisor'
+import Avatar from './Avatar'
 
 initStoryshots({
-  storyKindRegex: /^Atoms\/DateDivisor$/,
+  storyKindRegex: /^Atoms\/Avatar$/,
 })
 
 const componentProps = {
   id: 'unique_id',
-  children: 'Aug 3, 2023, 11:45 AM',
+  children: 'Soy un mensaje de prueba',
+  size: 'md',
+  isOnline: true,
 }
 afterEach(cleanup)
 
-describe('<DateDivisor />', () => {
+describe('<Avatar />', () => {
   test('should render component correctly', () => {
-    render(<DateDivisor {...componentProps} />)
-    const divisor = screen.getByTestId(componentProps.id)
-    expect(divisor).toBeInTheDocument()
+    render(<Avatar {...componentProps} />)
+    const avatar = screen.getByTestId(componentProps.id)
+    expect(avatar).toBeInTheDocument()
   })
-
   test('should render children correctly', () => {
-    render(<DateDivisor {...componentProps} />)
+    render(<Avatar {...componentProps} />)
     const childrenElement = screen.getByTestId(`${componentProps.id}-children`);
     expect(childrenElement.textContent).toEqual(componentProps.children);
   });
