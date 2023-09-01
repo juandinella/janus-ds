@@ -21,32 +21,35 @@ import { Meta, Props, Story, Preview } from '@storybook/blocks'
 
 ## Storybook live
 
-https://janus-ds-juandi.vercel.app/?path=/docs/intro--docs
+[https://janus-ds-juandi.vercel.app/?path=/docs/intro--docs](https://janus-ds-juandi.vercel.app/?path=/docs/intro--docs){:target="\_blank"}
 
 ## Install and integration
 
 1. Install: `npm i janus-ds --save`
 2. Import styles in your index.js: `import 'janus-ds/dist/index.css'`
 3. Add provider before router:
-   ```
-   import { DesignSystemProvider } from 'janus-ds'
-   const App = () =>
-   	<DesignSystemProvider>
-       <Router>
-       ...
-       </Router>
-     </DesignSystemProvider>
-   export default App
-   ```
+
+```
+import { DesignSystemProvider } from 'janus-ds'
+const App = () =>
+  <DesignSystemProvider>
+    <Router>
+    ...
+    </Router>
+  </DesignSystemProvider>
+export default App
+```
+
 4. Import components!
-   ```
-   import { Button } from '@ripio/janus-ds'
-   const MyComp = () =>
-   	<Button id="my_id">
-       My button!
-     </Button>
-   export default MyComp
-   ```
+
+```
+import { Button } from '@ripio/janus-ds'
+const MyComp = () =>
+  <Button id="my_id">
+  My button!
+  </Button>
+export default MyComp
+```
 
 ## Run storybook in dev
 
