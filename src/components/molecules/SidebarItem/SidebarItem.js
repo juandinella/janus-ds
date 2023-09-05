@@ -16,27 +16,53 @@ import Spacer from '../../layout/Spacer'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledSidebarItem = styled.button.withConfig({shouldForwardProp})`${styles}`
+const StyledSidebarItem = styled.button.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
-const SidebarItem = ({id, isOnline, isUnread, username, lastMessage, lastSeen, onClick}) => {
+const SidebarItem = ({
+  id,
+  isOnline,
+  isUnread,
+  username,
+  lastMessage,
+  lastSeen,
+  onClick,
+}) => {
   const avatarText = getInitials(username)
 
   return (
-  <StyledSidebarItem id={id} onClick={onClick || null}>
-    <Container flex alignItems="center" space='xs'>
-      <Avatar size='lg' isOnline={isOnline}>{avatarText}</Avatar>
-      <Spacer size='12' />
-      <Container>
-        <Text weight='bold' size='sm'>{username}</Text>
-        <Spacer size='4' />
-        <Container flex >
-          <Text weight={isUnread ? 'bold' : 'regular'} lineClamp='1' size='xs' color='neutral-dark'>{lastMessage}</Text>
-          <Text size='xs' color='neutral-dark'> - </Text>
-          <Text size='xs' color='neutral-dark'>{lastSeen}</Text>
+    <StyledSidebarItem id={id} data-testid={id} onClick={onClick || null}>
+      <Container flex alignItems="center" space="xs">
+        <Avatar size="lg" isOnline={isOnline}>
+          {avatarText}
+        </Avatar>
+        <Spacer size="12" />
+        <Container>
+          <Text weight="bold" size="sm">
+            {username}
+          </Text>
+          <Spacer size="4" />
+          <Container flex>
+            <Text
+              weight={isUnread ? 'bold' : 'regular'}
+              lineClamp="1"
+              size="xs"
+              color="neutral-dark"
+            >
+              {lastMessage}
+            </Text>
+            <Text size="xs" color="neutral-dark">
+              {' '}
+              -{' '}
+            </Text>
+            <Text size="xs" color="neutral-dark">
+              {lastSeen}
+            </Text>
+          </Container>
         </Container>
+        {isUnread && <Badge />}
       </Container>
-      {isUnread && <Badge/> }
-    </Container>
     </StyledSidebarItem>
   )
 }
@@ -50,12 +76,12 @@ SidebarItem.propTypes = {
   isOnline: PropTypes.bool.isRequired,
   lastSeen: PropTypes.string.isRequired,
   lastMessage: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 }
 
 SidebarItem.defaultProps = {
   isOnline: false,
-  isUnread: false
+  isUnread: false,
 }
 
 export default SidebarItem

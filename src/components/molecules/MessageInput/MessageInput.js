@@ -11,7 +11,7 @@ import ContentEditable from '../ContentEditable'
 const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledMessageInput = styled.div.withConfig({ shouldForwardProp })`${styles}`
 
-const MessageInput = ({ onSendMessage }) => {
+const MessageInput = ({ id, onSendMessage }) => {
   const ref = useRef(null)
 
   const sendMessage = () => {
@@ -40,7 +40,7 @@ const MessageInput = ({ onSendMessage }) => {
   }
 
   return (
-    <StyledMessageInput>
+    <StyledMessageInput id={id} data-testid={id}>
       <Container flex alignItems='flex-end'>
         <ContentEditable
           ref={ref}

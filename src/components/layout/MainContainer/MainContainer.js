@@ -13,7 +13,7 @@ const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledMainContainer = styled.section.withConfig({shouldForwardProp})`${styles}`
 
 const MainContainer = ({ id, children }) => {
-  return <StyledMainContainer id={id}>{children}</StyledMainContainer>
+  return <StyledMainContainer id={id} data-testid={id}>{children}</StyledMainContainer>
 }
 
 MainContainer.displayName = 'MainContainer'

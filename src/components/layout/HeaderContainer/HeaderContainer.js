@@ -13,7 +13,7 @@ const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledHeaderContainer = styled.header.withConfig({shouldForwardProp})`${styles}`
 
 const HeaderContainer = ({ id, children }) => {
-  return <StyledHeaderContainer id={id}>{children}</StyledHeaderContainer>
+  return <StyledHeaderContainer id={id} data-testid={id}>{children}</StyledHeaderContainer>
 }
 
 HeaderContainer.displayName = 'HeaderContainer'

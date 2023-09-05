@@ -30,7 +30,8 @@ export default {
   component: MessageGroup,
   args: {
     messages: [...msgList],
-    direction: 'incoming'
+    direction: 'incoming',
+    avatarText: 'JD',
   },
   argTypes: {
     ...getOptionsArgTypes(options.directions, 'direction'),

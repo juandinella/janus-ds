@@ -22,7 +22,7 @@ const StyledHeader = styled.div.withConfig({shouldForwardProp})`${styles}`
 const Header = ({ id, username, isOnline, lastSeen }) => {
   const avatarText = getInitials(username)
   return(
-    <StyledHeader id={id}>
+    <StyledHeader id={id} data-testid={id}>
       <Container flex alignItems="center">
       <Avatar size='md' isOnline={isOnline}>{avatarText}</Avatar>
       <Spacer size='12' />

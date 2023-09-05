@@ -17,7 +17,7 @@ import Spacer from '../../layout/Spacer'
 const shouldForwardProp = (prop) => isPropValid(prop)
 const StyledMessageGroup = styled.div.withConfig({shouldForwardProp})`${styles}`
 
-const MessageGroup = ({ direction, messages }) => {
+const MessageGroup = ({ id, direction, avatarText, messages }) => {
   const lastMessageRef = useRef(null)
 
   useEffect(() => {
@@ -43,11 +43,11 @@ const MessageGroup = ({ direction, messages }) => {
 }
 
   return (
-    <StyledMessageGroup direction={direction}>
+    <StyledMessageGroup direction={direction} id={id} data-testid={id}>
       <Container flex alignItems='flex-end'>
         {direction === 'incoming' && (
           <>
-            <Avatar size='sm'>JD </Avatar>
+            <Avatar size='sm'>{avatarText}</Avatar>
             <Spacer size='8' />
           </>
         )}

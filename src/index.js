@@ -24,6 +24,7 @@ export { default as MessageGroup } from './components/molecules/MessageGroup'
 export { default as MessageInput } from './components/molecules/MessageInput'
 export { default as SidebarItem } from './components/molecules/SidebarItem'
 export { default as SidebarList } from './components/molecules/SidebarList'
+export { default as TypingIndicator } from './components/molecules/TypingIndicator'
 
 // Provider
 export { default as DesignSystemProvider } from './providers/GlobalProvider'
