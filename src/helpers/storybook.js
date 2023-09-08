@@ -16,7 +16,7 @@ export const getOptionsArgTypes = (options, name) => ({
       type: 'select',
       labels: options.reduce(
         (acc, option) => ({ ...acc, [option]: option }),
-        {}
+        {},
       ),
     },
     options,

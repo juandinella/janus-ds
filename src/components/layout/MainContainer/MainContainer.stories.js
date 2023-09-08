@@ -1,8 +1,6 @@
 import MainContainer from './MainContainer'
 
-import {
-  getTemplate,
-} from '../../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 import Header from '../../molecules/Header'
 import MessageInput from '../../molecules/MessageInput'
@@ -18,18 +16,14 @@ export default {
     children: (
       <>
         <HeaderContainer>
-          <Header
-            isOnline
-            lastSeen="Active now"
-            username="Juan Di Nella"
-          />
+          <Header isOnline lastSeen="Active now" username="Juan Di Nella" />
         </HeaderContainer>
         <MessagesContainer />
         <MessageInputContainer>
           <MessageInput />
         </MessageInputContainer>
       </>
-    )
+    ),
   },
   argTypes: {},
   parameters: { __sb: { h: '500px' } },

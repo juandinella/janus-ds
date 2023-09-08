@@ -1,21 +1,14 @@
 import NewMessageButton from './NewMessageButton'
 
-
-import {
-  getTemplate,
-} from '../../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 const Template = getTemplate(NewMessageButton)
-
 
 export default {
   title: 'Atoms/NewMessageButton',
   component: NewMessageButton,
   args: {},
-  argTypes: {
-
-  },
+  argTypes: {},
 }
 
 export const Default = Template.bind({})
-

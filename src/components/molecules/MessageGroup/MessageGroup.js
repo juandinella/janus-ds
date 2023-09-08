@@ -15,7 +15,9 @@ import Spacer from '../../layout/Spacer'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMessageGroup = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledMessageGroup = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const MessageGroup = ({ id, direction, avatarText, messages }) => {
   const lastMessageRef = useRef(null)
@@ -28,30 +30,34 @@ const MessageGroup = ({ id, direction, avatarText, messages }) => {
     }
   }, [messages])
 
-
   const calculatePosition = (index, arrayLength) => {
-  switch (true) {
-    case arrayLength === 1:
-      return 'single'
-    case index === 0:
-      return 'first'
-    case index === arrayLength - 1:
-      return 'last'
-    default:
-      return 'middle'
+    switch (true) {
+      case arrayLength === 1:
+        return 'single'
+      case index === 0:
+        return 'first'
+      case index === arrayLength - 1:
+        return 'last'
+      default:
+        return 'middle'
+    }
   }
-}
 
   return (
     <StyledMessageGroup direction={direction} id={id} data-testid={id}>
-      <Container flex alignItems='flex-end'>
+      <Container flex alignItems="flex-end">
         {direction === 'incoming' && (
           <>
-            <Avatar size='sm'>{avatarText}</Avatar>
-            <Spacer size='8' />
+            <Avatar size="sm">{avatarText}</Avatar>
+            <Spacer size="8" />
           </>
         )}
-        <Container flex direction='column' gap='xxxs' alignItems={direction === 'incoming' ? 'flex-start': 'flex-end'}>
+        <Container
+          flex
+          direction="column"
+          gap="xxxs"
+          alignItems={direction === 'incoming' ? 'flex-start' : 'flex-end'}
+        >
           {messages.map((message, index) => (
             <Message
               ref={index === messages.length - 1 ? lastMessageRef : null}
@@ -64,7 +70,7 @@ const MessageGroup = ({ id, direction, avatarText, messages }) => {
             </Message>
           ))}
         </Container>
-        <Spacer size='16'/>
+        <Spacer size="16" />
       </Container>
     </StyledMessageGroup>
   )

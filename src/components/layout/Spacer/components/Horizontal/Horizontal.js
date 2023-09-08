@@ -11,8 +11,9 @@ import spacerStyles from '../../Spacer.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledSpacerHorizontal = styled.div.withConfig({shouldForwardProp})`${styles}`
-
+const StyledSpacerHorizontal = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const Horizontal = ({ id, mobileSize, size, isPlayground }) => (
   <StyledSpacerHorizontal

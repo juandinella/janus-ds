@@ -10,7 +10,6 @@ import {
 const Template = getTemplate(SidebarList)
 const ListTemplate = getListTemplate(SidebarList)
 
-
 export default {
   title: 'Molecules/SidebarList',
   component: SidebarList,

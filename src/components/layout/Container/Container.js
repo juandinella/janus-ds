@@ -9,8 +9,9 @@ import styles from './Container.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledContainer = styled.div.withConfig({shouldForwardProp})`${styles}`
-
+const StyledContainer = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const Container = ({
   id,
@@ -27,7 +28,7 @@ const Container = ({
   tag,
   gap,
   mobileGap,
-  children
+  children,
 }) => {
   return (
     <StyledContainer
@@ -48,7 +49,8 @@ const Container = ({
       isPlayground={isPlayground}
     >
       {children}
-    </StyledContainer>)
+    </StyledContainer>
+  )
 }
 
 Container.displayName = 'Container'

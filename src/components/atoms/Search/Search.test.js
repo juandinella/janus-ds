@@ -9,7 +9,7 @@ initStoryshots({
 
 const componentProps = {
   id: 'unique_id',
-  placeholder: 'Search...'
+  placeholder: 'Search...',
 }
 afterEach(cleanup)
 
@@ -37,9 +37,10 @@ describe('<Search />', () => {
   test('should update input value correctly', () => {
     const mockValue = 'search text'
     const mockOnChange = jest.fn()
-    render(<Search {...componentProps} value={mockValue} onChange={mockOnChange} />)
+    render(
+      <Search {...componentProps} value={mockValue} onChange={mockOnChange} />,
+    )
     const input = screen.getByTestId(`${componentProps.id}-input`)
     expect(input.value).toBe(mockValue)
   })
 })
-

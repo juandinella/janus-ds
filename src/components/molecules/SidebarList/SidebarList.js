@@ -8,20 +8,29 @@ import styles from './SidebarList.styles'
 import Container from '../../layout/Container'
 import SidebarItem from '../SidebarItem'
 
-
 /**
  * SidebarList
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledSidebarList = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledSidebarList = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const SidebarList = ({ id, sidebarList }) => {
   return (
     <StyledSidebarList id={id} data-testid={id}>
-      <Container gap='xxs' flex direction='column'>
+      <Container gap="xxs" flex direction="column">
         {sidebarList.map(
-          ({ id, lastMessage, username, isOnline, isUnread, lastSeen, onClick }) => (
+          ({
+            id,
+            lastMessage,
+            username,
+            isOnline,
+            isUnread,
+            lastSeen,
+            onClick,
+          }) => (
             <SidebarItem
               key={id}
               id={id}
@@ -32,10 +41,10 @@ const SidebarList = ({ id, sidebarList }) => {
               isUnread={isUnread}
               onClick={onClick}
             />
-          )
+          ),
         )}
       </Container>
-  </StyledSidebarList>
+    </StyledSidebarList>
   )
 }
 

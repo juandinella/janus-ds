@@ -1,8 +1,6 @@
 import SidebarItem from './SidebarItem'
 
-import {
-  getTemplate,
-} from '../../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 const Template = getTemplate(SidebarItem)
 
@@ -11,11 +9,11 @@ export default {
   component: SidebarItem,
   args: {
     username: 'Gonzalo Ricco',
-    lastMessage: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    lastMessage:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     lastSeen: '3w',
   },
-  argTypes: {
-  },
+  argTypes: {},
 }
 
 export const Default = Template.bind({})

@@ -1,8 +1,6 @@
 import ContentEditable from './ContentEditable'
 
-import {
-  getTemplate,
-} from '../../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 const Template = getTemplate(ContentEditable)
 
@@ -12,10 +10,7 @@ export default {
   args: {
     children: 'Soy un text',
   },
-  argTypes: {
-
-  },
+  argTypes: {},
 }
 
 export const Default = Template.bind({})
-

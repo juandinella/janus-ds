@@ -4,16 +4,21 @@ import React from 'react'
 import styled from 'styled-components'
 import styles from './MessagesContainer.styles'
 
-
 /**
  * MessagesContainer
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMessagesContainer = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledMessagesContainer = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const MessagesContainer = ({ id, children }) => {
-  return <StyledMessagesContainer id={id} data-testid={id}>{children}</StyledMessagesContainer>
+  return (
+    <StyledMessagesContainer id={id} data-testid={id}>
+      {children}
+    </StyledMessagesContainer>
+  )
 }
 
 MessagesContainer.displayName = 'MessagesContainer'

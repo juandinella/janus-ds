@@ -10,9 +10,21 @@ import styles from './Text.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledText = styled.p.withConfig({shouldForwardProp})`${styles}`
+const StyledText = styled.p.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
-const Text = ({ id, type, size, weight, alignment, transform, color, lineClamp, children}) => {
+const Text = ({
+  id,
+  type,
+  size,
+  weight,
+  alignment,
+  transform,
+  color,
+  lineClamp,
+  children,
+}) => {
   return (
     <StyledText
       id={id}
@@ -42,7 +54,7 @@ Text.propTypes = {
   /** Size of the text */
   size: PropTypes.oneOfType([
     PropTypes.oneOf(options.sizes),
-    PropTypes.arrayOf(PropTypes.oneOf(options.sizes))
+    PropTypes.arrayOf(PropTypes.oneOf(options.sizes)),
   ]),
   /** Text's font weight */
   weight: PropTypes.oneOf(options.weights),

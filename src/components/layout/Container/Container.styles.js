@@ -4,8 +4,7 @@ import layout from '../../../styles/theme/layout'
 const parseTwoDimensionalSpacing = (spacing) => {
   const dimension1 = spacing && spacing.split(' ')[0]
   const dimension2 =
-    (spacing && spacing.split(' ')[1]) ||
-    (spacing && spacing.split(' ')[0])
+    (spacing && spacing.split(' ')[1]) || (spacing && spacing.split(' ')[0])
 
   return [dimension1, dimension2]
 }
@@ -31,7 +30,9 @@ export default css`
     `}
 
   ${(props) => {
-    const [gapColumnMobile, gapRowMobile] = parseTwoDimensionalSpacing(props.mobileGap)
+    const [gapColumnMobile, gapRowMobile] = parseTwoDimensionalSpacing(
+      props.mobileGap,
+    )
     const [gapColumn, gapRow] = parseTwoDimensionalSpacing(props.gap)
 
     return (
@@ -48,13 +49,17 @@ export default css`
   }}
 
   ${(props) => {
-    const [spaceColumnMobile, spaceRowMobile] = parseTwoDimensionalSpacing(props.mobileSpace)
+    const [spaceColumnMobile, spaceRowMobile] = parseTwoDimensionalSpacing(
+      props.mobileSpace,
+    )
     const [spaceColumn, spaceRow] = parseTwoDimensionalSpacing(props.space)
 
     return (
       props.space &&
       css`
-        padding: var(--spacing-${spaceColumnMobile ? spaceColumnMobile : spaceColumn})
+        padding: var(
+            --spacing-${spaceColumnMobile ? spaceColumnMobile : spaceColumn}
+          )
           var(--spacing-${spaceRowMobile ? spaceRowMobile : spaceRow});
 
         @media screen and (min-width: ${layout.breakpoints.sm}) {
@@ -66,7 +71,9 @@ export default css`
 
   ${(props) => {
     if (props.justifyContent) {
-      const [mobileJustifyContent, desktopJustifyContent] = props.justifyContent.split(",").map(s => s.trim())
+      const [mobileJustifyContent, desktopJustifyContent] = props.justifyContent
+        .split(',')
+        .map((s) => s.trim())
 
       return css`
         justify-content: ${mobileJustifyContent};
@@ -80,7 +87,9 @@ export default css`
 
   ${(props) => {
     if (props.alignItems) {
-      const [mobileAlignItems, desktopAlignItems] = props.alignItems.split(",").map(s => s.trim())
+      const [mobileAlignItems, desktopAlignItems] = props.alignItems
+        .split(',')
+        .map((s) => s.trim())
 
       return css`
         align-items: ${mobileAlignItems};
@@ -94,7 +103,9 @@ export default css`
 
   ${(props) => {
     if (props.direction) {
-      const [mobileDirection, desktopDirection] = props.direction.split(",").map(s => s.trim())
+      const [mobileDirection, desktopDirection] = props.direction
+        .split(',')
+        .map((s) => s.trim())
 
       return css`
         flex-direction: ${mobileDirection};

@@ -19,7 +19,7 @@ export default {
     flex: true,
   },
   argTypes: {
-    tag: {control: 'text'},
+    tag: { control: 'text' },
     gap: {
       control: 'text',
       description: 'The space between containers. Supports responsive design.',
@@ -30,19 +30,23 @@ export default {
     },
     space: {
       control: 'text',
-      description: 'Vertical and horizontal padding for desktop. E.g. "xs" or "xs, lg".'
+      description:
+        'Vertical and horizontal padding for desktop. E.g. "xs" or "xs, lg".',
     },
     mobileSpace: {
       control: 'text',
-      description: 'Vertical and horizontal padding for mobile. If not provided, desktop values will be used.'
+      description:
+        'Vertical and horizontal padding for mobile. If not provided, desktop values will be used.',
     },
     justifyContent: {
       ...getOptionsArgTypes(options.justifyContent, 'justifyContent'),
-      description: 'Justify content for mobile and desktop, separated by a comma. E.g. "flex-start, center".'
+      description:
+        'Justify content for mobile and desktop, separated by a comma. E.g. "flex-start, center".',
     },
     alignItems: {
       ...getOptionsArgTypes(options.alignItems, 'alignItems'),
-      description: 'Align items vertically in the container. E.g. "flex-start, center".',
+      description:
+        'Align items vertically in the container. E.g. "flex-start, center".',
     },
   },
 }

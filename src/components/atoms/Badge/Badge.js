@@ -9,10 +9,12 @@ import styles from './Badge.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledBadge = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledBadge = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const Badge = ({ id }) => {
-  return <StyledBadge id={id} data-testid={id}/>
+  return <StyledBadge id={id} data-testid={id} />
 }
 
 Badge.displayName = 'Badge'

@@ -53,8 +53,7 @@ const SidebarItem = ({
               {lastMessage}
             </Text>
             <Text size="xs" color="neutral-dark">
-              {' '}
-              -{' '}
+              -
             </Text>
             <Text size="xs" color="neutral-dark">
               {lastSeen}

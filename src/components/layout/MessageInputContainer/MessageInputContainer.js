@@ -9,10 +9,18 @@ import styles from './MessageInputContainer.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMessageInputContainer = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledMessageInputContainer = styled.div.withConfig({
+  shouldForwardProp,
+})`
+  ${styles}
+`
 
 const MessageInputContainer = ({ id, children }) => {
-  return <StyledMessageInputContainer id={id} data-testid={id}>{children}</StyledMessageInputContainer>
+  return (
+    <StyledMessageInputContainer id={id} data-testid={id}>
+      {children}
+    </StyledMessageInputContainer>
+  )
 }
 
 MessageInputContainer.displayName = 'MessageInputContainer'

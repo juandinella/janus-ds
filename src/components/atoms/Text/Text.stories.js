@@ -14,7 +14,8 @@ export default {
   title: 'Atoms/Text',
   component: Text,
   args: {
-    children: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    children:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     size: 'lg',
   },
   argTypes: {
@@ -40,10 +41,14 @@ export const Weights = ListTemplate.bind({})
 Weights.args = { items: options.weights.map((weight) => ({ weight })) }
 
 export const Alignments = ListTemplate.bind({})
-Alignments.args = { items: options.alignments.map((alignment) => ({ alignment })) }
+Alignments.args = {
+  items: options.alignments.map((alignment) => ({ alignment })),
+}
 
 export const Transforms = ListTemplate.bind({})
-Transforms.args = { items: options.transforms.map((transform) => ({ transform })) }
+Transforms.args = {
+  items: options.transforms.map((transform) => ({ transform })),
+}
 
 export const Colors = ListTemplate.bind({})
 Colors.args = { items: options.colors.map((color) => ({ color })) }

@@ -10,32 +10,38 @@ import Text from '../../atoms/Text'
 import Container from '../../layout/Container'
 import Spacer from '../../layout/Spacer'
 
-
 /**
  * Header
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledHeader = styled.div.withConfig({shouldForwardProp})`${styles}`
-
+const StyledHeader = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const Header = ({ id, username, isOnline, lastSeen }) => {
   const avatarText = getInitials(username)
-  return(
+  return (
     <StyledHeader id={id} data-testid={id}>
       <Container flex alignItems="center">
-      <Avatar size='md' isOnline={isOnline}>{avatarText}</Avatar>
-      <Spacer size='12' />
-      <Container>
-        <Text weight='bold' size='sm'>{username}</Text>
-        <Spacer size='4' />
-        <Container flex alignItems="center">
-          <Text size='xs' color='neutral-dark'>{lastSeen}</Text>
+        <Avatar size="md" isOnline={isOnline}>
+          {avatarText}
+        </Avatar>
+        <Spacer size="12" />
+        <Container>
+          <Text weight="bold" size="sm">
+            {username}
+          </Text>
+          <Spacer size="4" />
+          <Container flex alignItems="center">
+            <Text size="xs" color="neutral-dark">
+              {lastSeen}
+            </Text>
+          </Container>
         </Container>
       </Container>
-    </Container>
     </StyledHeader>
-    )
+  )
 }
 
 Header.displayName = 'Header'
@@ -44,11 +50,11 @@ Header.propTypes = {
   id: PropTypes.string,
   username: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  lastSeen: PropTypes.string.isRequired
+  lastSeen: PropTypes.string.isRequired,
 }
 
 Header.defaultProps = {
-  isOnline: false
+  isOnline: false,
 }
 
 export default Header

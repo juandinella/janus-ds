@@ -1,8 +1,6 @@
 import Badge from './Badge'
 
-import {
-  getTemplate,
-} from '../../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 const Template = getTemplate(Badge)
 
@@ -14,4 +12,3 @@ export default {
 }
 
 export const Default = Template.bind({})
-

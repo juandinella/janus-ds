@@ -1,15 +1,12 @@
 import SidebarContainer from './SidebarContainer'
 
-import {
-  getTemplate,
-} from '../../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 import NewMessageButton from '../../atoms/NewMessageButton'
 import Search from '../../atoms/Search'
 import Container from '../../layout/Container'
 import Spacer from '../../layout/Spacer'
 import SidebarList from '../../molecules/SidebarList'
-
 
 const Template = getTemplate(SidebarContainer)
 
@@ -19,12 +16,12 @@ export default {
   args: {
     children: (
       <>
-        <Container flex alignItems='center'>
-          <Search placeholder='Buscá lo quieras' />
-          <Spacer size='12' />
+        <Container flex alignItems="center">
+          <Search placeholder="Buscá lo quieras" />
+          <Spacer size="12" />
           <NewMessageButton />
         </Container>
-        <Spacer size='32' />
+        <Spacer size="32" />
         <SidebarList
           sidebarList={[
             {
@@ -32,42 +29,42 @@ export default {
               isUnread: true,
               lastMessage: 'Qué hacés papá?',
               lastSeen: '1w',
-              username: 'Gonzalo Ricco'
+              username: 'Gonzalo Ricco',
             },
             {
               isOnline: true,
               lastMessage: 'This is a message',
               lastSeen: '1w',
-              username: 'Pepe Pijudo'
+              username: 'Pepe Pijudo',
             },
             {
               lastMessage: 'Helloooo',
               lastSeen: '1h',
-              username: 'Jason Miriapolis'
+              username: 'Jason Miriapolis',
             },
             {
-              lastMessage: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+              lastMessage:
+                'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
               lastSeen: '1w',
-              username: 'Elmer Cadito'
+              username: 'Elmer Cadito',
             },
             {
               lastMessage: 'Uti culiiii',
               lastSeen: '1w',
-              username: 'Migue Granado'
+              username: 'Migue Granado',
             },
             {
               lastMessage: 'Hola, cómo estás?',
               lastSeen: '3w',
-              username: 'Juan Di Nella'
-            }
+              username: 'Juan Di Nella',
+            },
           ]}
         />
       </>
-    )
+    ),
   },
   argTypes: {},
   parameters: { __sb: { h: '500px' } },
 }
 
 export const Default = Template.bind({})
-

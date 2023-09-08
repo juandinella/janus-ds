@@ -4,16 +4,21 @@ import React from 'react'
 import styled from 'styled-components'
 import styles from './SidebarContainer.styles'
 
-
 /**
  * SidebarContainer
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledSidebarContainer = styled.aside.withConfig({shouldForwardProp})`${styles}`
+const StyledSidebarContainer = styled.aside.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const SidebarContainer = ({ id, children }) => {
-  return <StyledSidebarContainer id={id} data-testid={id} role='navigation'>{children}</StyledSidebarContainer>
+  return (
+    <StyledSidebarContainer id={id} data-testid={id} role="navigation">
+      {children}
+    </StyledSidebarContainer>
+  )
 }
 
 SidebarContainer.displayName = 'SidebarContainer'

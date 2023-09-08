@@ -8,7 +8,8 @@ initStoryshots({
 })
 
 const componentProps = {
-  id: 'unique_id',onClick: jest.fn(),
+  id: 'unique_id',
+  onClick: jest.fn(),
 }
 afterEach(cleanup)
 beforeEach(() => {

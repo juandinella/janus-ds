@@ -6,68 +6,70 @@ import styled from 'styled-components'
 import styles from './ContentEditable.styles'
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledContentEditable = styled.div.withConfig({ shouldForwardProp })`${styles}`
+const StyledContentEditable = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
-const ContentEditable = React.forwardRef(({ id, ariaLabel, onBlur, onChange, onKeyDown }, ref) => {
-
-  const handleBlur = () => {
-    if (ref && ref.current && onBlur) {
-      onBlur(ref.current.innerHTML)
+const ContentEditable = React.forwardRef(
+  ({ id, ariaLabel, onBlur, onChange, onKeyDown }, ref) => {
+    const handleBlur = () => {
+      if (ref && ref.current && onBlur) {
+        onBlur(ref.current.innerHTML)
+      }
     }
-  }
 
-  const handleChange = () => {
-    if (ref && ref.current && onChange) {
-      onChange(ref.current.innerHTML)
+    const handleChange = () => {
+      if (ref && ref.current && onChange) {
+        onChange(ref.current.innerHTML)
+      }
     }
-  }
 
-  const scrollToBottom = () => {
-    if (ref && ref.current) {
-      ref.current.scrollTop = ref.current.scrollHeight
+    const scrollToBottom = () => {
+      if (ref && ref.current) {
+        ref.current.scrollTop = ref.current.scrollHeight
+      }
     }
-  }
 
-  const handlePaste = (e) => {
-    e.preventDefault()
+    const handlePaste = (e) => {
+      e.preventDefault()
 
-    const text = e.clipboardData.getData('text/plain')
+      const text = e.clipboardData.getData('text/plain')
 
-    const selection = window.getSelection()
-    const range = selection.getRangeAt(0)
+      const selection = window.getSelection()
+      const range = selection.getRangeAt(0)
 
-    selection.deleteFromDocument()
+      selection.deleteFromDocument()
 
-    const textNode = document.createTextNode(text)
-    range.insertNode(textNode)
+      const textNode = document.createTextNode(text)
+      range.insertNode(textNode)
 
-    range.setStartAfter(textNode)
-    range.setEndAfter(textNode)
+      range.setStartAfter(textNode)
+      range.setEndAfter(textNode)
 
-    selection.removeAllRanges()
-    selection.addRange(range)
+      selection.removeAllRanges()
+      selection.addRange(range)
 
-    scrollToBottom()
-  }
+      scrollToBottom()
+    }
 
-
-  return (
-    <StyledContentEditable
-      id={id}
-      data-testid={id}
-      ref={ref}
-      contentEditable
-      suppressContentEditableWarning="true"
-      role="textbox"
-      aria-label={ariaLabel}
-      onBlur={handleBlur}
-      onInput={handleChange}
-      onKeyDown={onKeyDown}
-      onPaste={handlePaste}
-      spellCheck={false}
-    />
-  )
-})
+    return (
+      <StyledContentEditable
+        id={id}
+        data-testid={id}
+        ref={ref}
+        contentEditable
+        suppressContentEditableWarning="true"
+        role="textbox"
+        aria-label={ariaLabel}
+        onBlur={handleBlur}
+        onInput={handleChange}
+        onKeyDown={onKeyDown}
+        onPaste={handlePaste}
+        spellCheck={false}
+      />
+    )
+  },
+)
 
 ContentEditable.displayName = 'ContentEditable'
 

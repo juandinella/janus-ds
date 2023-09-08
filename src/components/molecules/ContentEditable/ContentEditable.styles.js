@@ -23,6 +23,8 @@ export default css`
   outline: 0 none;
 
   &:focus-visible {
-    box-shadow: 0 0 0 2px white, 0 0 0 4px #e4ceff;
+    box-shadow:
+      0 0 0 2px white,
+      0 0 0 4px #e4ceff;
   }
 `

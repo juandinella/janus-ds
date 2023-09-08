@@ -9,7 +9,9 @@ import Spacer from '../../layout/Spacer'
 import ContentEditable from '../ContentEditable'
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMessageInput = styled.div.withConfig({ shouldForwardProp })`${styles}`
+const StyledMessageInput = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const MessageInput = ({ id, onSendMessage }) => {
   const ref = useRef(null)
@@ -18,7 +20,7 @@ const MessageInput = ({ id, onSendMessage }) => {
     if (ref.current) {
       let message = ref.current.innerHTML
       message = message.replace(/<br\s*\/?>/g, '\n').replace(/&nbsp;/g, ' ')
-      message = message.replace(/<\/?[^>]+(>|$)/g, "")
+      message = message.replace(/<\/?[^>]+(>|$)/g, '')
       message = message.trim()
       if (message.length > 0) {
         onSendMessage(message)
@@ -26,7 +28,6 @@ const MessageInput = ({ id, onSendMessage }) => {
       }
     }
   }
-
 
   const handleSendClick = () => {
     sendMessage()
@@ -41,7 +42,7 @@ const MessageInput = ({ id, onSendMessage }) => {
 
   return (
     <StyledMessageInput id={id} data-testid={id}>
-      <Container flex alignItems='flex-end'>
+      <Container flex alignItems="flex-end">
         <ContentEditable
           ref={ref}
           ariaLabel="Escribe un mensaje"
@@ -53,7 +54,6 @@ const MessageInput = ({ id, onSendMessage }) => {
     </StyledMessageInput>
   )
 }
-
 
 MessageInput.propTypes = {
   onSendMessage: PropTypes.func.isRequired,

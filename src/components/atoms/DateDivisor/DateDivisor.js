@@ -10,12 +10,16 @@ import Text from '../Text'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledDateDivisor = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledDateDivisor = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const DateDivisor = ({ id, children }) => {
   return (
     <StyledDateDivisor id={id} data-testid={id}>
-      <Text data-testid={`${id}-children`} type='span' size='xs'>{children}</Text>
+      <Text data-testid={`${id}-children`} type="span" size="xs">
+        {children}
+      </Text>
     </StyledDateDivisor>
   )
 }

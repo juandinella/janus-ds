@@ -17,29 +17,35 @@ const bubblePositions = {
       border-radius: var(--border-radius-lg);
     `,
     first: css`
-      border-radius: var(--border-radius-lg) var(--border-radius-lg) var(--border-radius-lg) var(--border-radius-xs);
+      border-radius: var(--border-radius-lg) var(--border-radius-lg)
+        var(--border-radius-lg) var(--border-radius-xs);
     `,
     middle: css`
-      border-radius: var(--border-radius-xs) var(--border-radius-lg) var(--border-radius-lg) var(--border-radius-xs);
+      border-radius: var(--border-radius-xs) var(--border-radius-lg)
+        var(--border-radius-lg) var(--border-radius-xs);
     `,
     last: css`
-      border-radius: var(--border-radius-xs) var(--border-radius-lg) var(--border-radius-lg) var(--border-radius-lg);
-    `
+      border-radius: var(--border-radius-xs) var(--border-radius-lg)
+        var(--border-radius-lg) var(--border-radius-lg);
+    `,
   },
   outgoing: {
     single: css`
       border-radius: var(--border-radius-lg);
     `,
     first: css`
-      border-radius: var(--border-radius-lg) var(--border-radius-lg) var(--border-radius-xs) var(--border-radius-lg);
+      border-radius: var(--border-radius-lg) var(--border-radius-lg)
+        var(--border-radius-xs) var(--border-radius-lg);
     `,
     middle: css`
-      border-radius: var(--border-radius-lg) var(--border-radius-xs) var(--border-radius-xs) var(--border-radius-lg);
+      border-radius: var(--border-radius-lg) var(--border-radius-xs)
+        var(--border-radius-xs) var(--border-radius-lg);
     `,
     last: css`
-      border-radius: var(--border-radius-lg) var(--border-radius-xs) var(--border-radius-lg) var(--border-radius-lg);
-    `
-  }
+      border-radius: var(--border-radius-lg) var(--border-radius-xs)
+        var(--border-radius-lg) var(--border-radius-lg);
+    `,
+  },
 }
 
 export default css`

@@ -24,7 +24,7 @@ describe('<Message />', () => {
 
   test('should render children correctly', () => {
     render(<Message {...componentProps} />)
-    const childrenElement = screen.getByTestId(`${componentProps.id}-children`);
-    expect(childrenElement.textContent).toEqual(componentProps.children);
-  });
+    const childrenElement = screen.getByTestId(`${componentProps.id}-children`)
+    expect(childrenElement.textContent).toEqual(componentProps.children)
+  })
 })

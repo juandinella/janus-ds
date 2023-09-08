@@ -25,7 +25,7 @@ const getSizeForDesktop = (size) => {
 export default css`
   display: flex;
 
-  ${props => css`
+  ${(props) => css`
     ${getSizeForMobile(props.size)}
     ${getSizeForDesktop(props.size)}
   `}

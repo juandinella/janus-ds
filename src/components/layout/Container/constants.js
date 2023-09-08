@@ -62,7 +62,7 @@ export const options = {
     'neutral-00',
     'primary-main',
     'secondary-pink',
-    'wallet1'
+    'wallet1',
   ],
   overflow: ['hidden', 'visible', 'scroll', 'auto'],
   alignments: ['left', 'center', 'right'],

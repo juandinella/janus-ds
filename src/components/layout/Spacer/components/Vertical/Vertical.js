@@ -6,16 +6,23 @@ import styles from './Vertical.styles'
 import { options } from '../../constants'
 import spacerStyles from '../../Spacer.styles'
 
-
 /**
  * Spacer.Vertical
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledSpacerVertical = styled.div.withConfig({shouldForwardProp})`${styles}`
+const StyledSpacerVertical = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
-
-const Vertical = ({ id, mobileSize, size, height, isPlayground, maxHeight }) => (
+const Vertical = ({
+  id,
+  mobileSize,
+  size,
+  height,
+  isPlayground,
+  maxHeight,
+}) => (
   <StyledSpacerVertical
     css={[spacerStyles, styles]}
     isPlayground={isPlayground}

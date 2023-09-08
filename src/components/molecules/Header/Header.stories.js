@@ -1,11 +1,8 @@
 import Header from './Header'
 
-import {
-  getTemplate,
-} from '../../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 const Template = getTemplate(Header)
-
 
 export default {
   title: 'Molecules/Header',
@@ -15,9 +12,7 @@ export default {
     lastSeen: 'Active now',
     isOnline: true,
   },
-  argTypes: {
-  },
+  argTypes: {},
 }
 
 export const Default = Template.bind({})
-

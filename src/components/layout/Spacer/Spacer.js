@@ -12,8 +12,9 @@ import styles from './Spacer.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledSpacer = styled.div.withConfig({shouldForwardProp})`${styles}`
-
+const StyledSpacer = styled.div.withConfig({ shouldForwardProp })`
+  ${styles}
+`
 
 const Spacer = ({ id, mobileSize, size, isPlayground }) => (
   <StyledSpacer

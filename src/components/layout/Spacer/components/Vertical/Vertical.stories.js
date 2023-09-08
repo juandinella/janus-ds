@@ -6,7 +6,6 @@ import {
 } from '../../../../../helpers/storybook'
 import { options } from '../../constants'
 
-
 const Template = getTemplate(Vertical)
 const ListTemplate = getListTemplate(Vertical)
 

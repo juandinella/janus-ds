@@ -23,7 +23,7 @@ describe('<Avatar />', () => {
   })
   test('should render children correctly', () => {
     render(<Avatar {...componentProps} />)
-    const childrenElement = screen.getByTestId(`${componentProps.id}-children`);
-    expect(childrenElement.textContent).toEqual(componentProps.children);
-  });
+    const childrenElement = screen.getByTestId(`${componentProps.id}-children`)
+    expect(childrenElement.textContent).toEqual(componentProps.children)
+  })
 })
