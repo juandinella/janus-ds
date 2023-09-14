@@ -48,6 +48,11 @@ export default {
       description:
         'Align items vertically in the container. E.g. "flex-start, center".',
     },
+    overflow: {
+      ...getOptionsArgTypes(options.overflow, 'overflow'),
+      description: 'overflow of the Container. E.g. "hidden, scroll".',
+    },
+    ...getOptionsArgTypes(options.whiteSpace, 'whiteSpace'),
   },
 }
 

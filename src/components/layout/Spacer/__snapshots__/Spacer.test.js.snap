@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layout/Spacer Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-ofq5q9-0 kjKZqh"
+    size="4"
+  />
+</div>
+`;
+
+exports[`Storyshots Layout/Spacer Sizes 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-ofq5q9-0 dfPMsV"
+    size="0"
+  />
+  <div
+    className="sc-ofq5q9-0 kjKZqh"
+    size="4"
+  />
+  <div
+    className="sc-ofq5q9-0 eiAiKN"
+    size="8"
+  />
+  <div
+    className="sc-ofq5q9-0 eAFszd"
+    size="12"
+  />
+  <div
+    className="sc-ofq5q9-0 llvzih"
+    size="16"
+  />
+  <div
+    className="sc-ofq5q9-0 hFdNLd"
+    size="24"
+  />
+  <div
+    className="sc-ofq5q9-0 dPcXRR"
+    size="32"
+  />
+  <div
+    className="sc-ofq5q9-0 rHOoF"
+    size="48"
+  />
+  <div
+    className="sc-ofq5q9-0 fXAmsp"
+    size="56"
+  />
+  <div
+    className="sc-ofq5q9-0 criAVl"
+    size="64"
+  />
+</div>
+`;

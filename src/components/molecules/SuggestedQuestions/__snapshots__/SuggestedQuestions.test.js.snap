@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1tbsf4n-0 lihcOl"
+  >
+    <div
+      className="sc-1kqcgfr-0 fthHmC"
+      overflow="auto"
+    >
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 1
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 2
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 3
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 4
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 5
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 6
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 7
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 8
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 9
+        </span>
+      </button>
+      <button
+        className="sc-18ktvrn-0 kRLHHi"
+        onClick={[Function]}
+      >
+        <span>
+          Question number 10
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

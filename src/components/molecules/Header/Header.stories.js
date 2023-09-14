@@ -8,9 +8,7 @@ export default {
   title: 'Molecules/Header',
   component: Header,
   args: {
-    username: 'Juan Di Nella',
-    lastSeen: 'Active now',
-    isOnline: true,
+    text: 'Chat with Janus',
   },
   argTypes: {},
 }

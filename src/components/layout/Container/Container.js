@@ -25,9 +25,10 @@ const Container = ({
   isPlayground,
   wrap,
   overflow,
-  tag,
+  tag = 'div',
   gap,
   mobileGap,
+  whiteSpace,
   children,
 }) => {
   return (
@@ -47,6 +48,7 @@ const Container = ({
       gap={gap}
       mobileGap={mobileGap}
       isPlayground={isPlayground}
+      whiteSpace={whiteSpace}
     >
       {children}
     </StyledContainer>
@@ -84,10 +86,7 @@ Container.propTypes = {
   gap: PropTypes.string,
   /** The space between containers for mobile*/
   mobileGap: PropTypes.string,
-}
-
-Container.defaultProps = {
-  tag: 'div',
+  whiteSpace: PropTypes.string,
 }
 
 export default Container

@@ -7,8 +7,16 @@ const Template = getTemplate(SendButton)
 export default {
   title: 'Atoms/SendButton',
   component: SendButton,
-  args: {},
-  argTypes: {},
+  args: {
+    color: '#171717',
+  },
+  argTypes: {
+    color: {
+      control: { type: 'color' },
+    },
+  },
 }
 
 export const Default = Template.bind({})
+
+export const Disabled = { args: { disabled: true } }

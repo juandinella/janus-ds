@@ -36,7 +36,7 @@
 	```
 4. Import components!
 	```
-	import { Button } from '@ripio/janus-ds'
+	import { Button } from 'janus-ds'
 	const MyComp = () =>
 		<Button id="my_id">
 	    My button!

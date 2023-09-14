@@ -14,30 +14,42 @@ const StyledMessage = styled.div.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const Message = React.forwardRef(({ id, variant, position, children }, ref) => {
-  return (
-    <StyledMessage
-      ref={ref}
-      id={id}
-      data-testid={id}
-      variant={variant}
-      position={position}
-    >
-      <span data-testid={`${id}-children`}>{children}</span>
-    </StyledMessage>
-  )
-})
+const Message = React.forwardRef(
+  (
+    { id, variant, children, backgroundColor = '#171717', loading = false },
+    ref,
+  ) => {
+    return (
+      <StyledMessage
+        ref={ref}
+        id={id}
+        data-testid={id}
+        variant={variant}
+        backgroundColor={backgroundColor}
+        loading={loading}
+      >
+        {loading ? (
+          <>
+            <span />
+            <span />
+            <span />
+          </>
+        ) : (
+          <span data-testid={`${id}-children`}>{children}</span>
+        )}
+      </StyledMessage>
+    )
+  },
+)
 
 Message.displayName = 'Message'
 
 Message.propTypes = {
+  id: PropTypes.string,
   children: PropTypes.node.isRequired,
   variant: PropTypes.oneOf(options.variants),
-  position: PropTypes.oneOf(options.positions),
-}
-
-Message.defaultProps = {
-  position: 'single',
+  backgroundColor: PropTypes.string,
+  loading: PropTypes.bool,
 }
 
 export default Message

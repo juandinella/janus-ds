@@ -17,4 +17,9 @@ export default css`
   &:hover {
     background-color: var(--bg-primary-lightest);
   }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
 `

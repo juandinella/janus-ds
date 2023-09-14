@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Layout/Container Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kqcgfr-0 dgLeCe"
+  >
+    This is a Child!
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Container Responsive 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kqcgfr-0 bjwHeg"
+  >
+    This is a Child!
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout/Container Spaces 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    className="sc-1kqcgfr-0 emMqYE"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 gNwBhk"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 fLfIsE"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 lmdbjI"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 jglFPI"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 jpdqlQ"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 bJZKRk"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 ilvRPc"
+  >
+    This is a Child!
+  </div>
+  <div
+    className="sc-1kqcgfr-0 eecQGM"
+  >
+    This is a Child!
+  </div>
+</div>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/CloseButton Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <button
+    className="sc-x4jc1v-0 cOgVEl"
+    onClick={[Function]}
+  >
+    <svg
+      fill="none"
+      height="14"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M13.707.293a1 1 0 010 1.414l-12 12a1 1 0 01-1.414-1.414l12-12a1 1 0 011.414 0z"
+        fill="var(--color-neutral-500)"
+        fillRule="evenodd"
+      />
+      <path
+        clipRule="evenodd"
+        d="M.293.293a1 1 0 011.414 0l12 12a1 1 0 01-1.414 1.414l-12-12a1 1 0 010-1.414z"
+        fill="var(--color-neutral-500)"
+        fillRule="evenodd"
+      />
+    </svg>
+    <span
+      className="sc-90c4yq-0 bmmsAZ"
+    >
+      Close Chat
+    </span>
+  </button>
+</div>
+`;

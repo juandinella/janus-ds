@@ -11,16 +11,11 @@ const StyledContentEditable = styled.div.withConfig({ shouldForwardProp })`
 `
 
 const ContentEditable = React.forwardRef(
-  ({ id, ariaLabel, onBlur, onChange, onKeyDown }, ref) => {
+  ({ id, onBlur, onChange, onKeyDown, placeholder, onInput }, ref) => {
     const handleBlur = () => {
+      console.log('gato Ref:', ref.current)
       if (ref && ref.current && onBlur) {
         onBlur(ref.current.innerHTML)
-      }
-    }
-
-    const handleChange = () => {
-      if (ref && ref.current && onChange) {
-        onChange(ref.current.innerHTML)
       }
     }
 
@@ -60,12 +55,14 @@ const ContentEditable = React.forwardRef(
         contentEditable
         suppressContentEditableWarning="true"
         role="textbox"
-        aria-label={ariaLabel}
+        aria-label={placeholder}
         onBlur={handleBlur}
-        onInput={handleChange}
+        onInput={onInput}
+        onChange={onChange}
         onKeyDown={onKeyDown}
         onPaste={handlePaste}
         spellCheck={false}
+        placeholder={placeholder}
       />
     )
   },
@@ -76,13 +73,9 @@ ContentEditable.displayName = 'ContentEditable'
 ContentEditable.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node,
-  ariaLabel: PropTypes.string,
+  placeholder: PropTypes.string,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
-}
-
-ContentEditable.defaultProps = {
-  ariaLabel: 'Campo de mensaje',
 }
 
 export default ContentEditable

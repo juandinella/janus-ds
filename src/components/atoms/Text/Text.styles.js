@@ -24,6 +24,7 @@ const getSizeForDesktop = (size) => {
 
 export default css`
   display: flex;
+  line-height: 1.25;
 
   ${(props) => css`
     ${getSizeForMobile(props.size)}
@@ -45,7 +46,7 @@ export default css`
   ${(props) =>
     props.color &&
     css`
-      color: var(--text-color-${(props) => props.color});
+      color: var(--color-neutral-${(props) => props.color});
     `}
 
   ${(props) =>

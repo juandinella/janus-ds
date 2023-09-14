@@ -18,10 +18,10 @@ const StyledSpacerVertical = styled.div.withConfig({ shouldForwardProp })`
 const Vertical = ({
   id,
   mobileSize,
-  size,
-  height,
-  isPlayground,
-  maxHeight,
+  size = '4',
+  height = '100%',
+  isPlayground = false,
+  maxHeight = 'auto',
 }) => (
   <StyledSpacerVertical
     css={[spacerStyles, styles]}
@@ -54,10 +54,4 @@ Vertical.propTypes = {
   id: PropTypes.string,
 }
 
-Vertical.defaultProps = {
-  size: '4',
-  height: '100%',
-  maxHeight: 'auto',
-  isPlayground: false,
-}
 export default Vertical

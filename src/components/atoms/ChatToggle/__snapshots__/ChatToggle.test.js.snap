@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/ChatToggle Default 1`] = `
+<div
+  style={
+    {
+      "alignContent": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexWrap": "wrap",
+      "gap": "10px 30px",
+      "height": "100%",
+      "justifyContent": "flex-start",
+      "maxHeight": "auto",
+      "position": "relative",
+    }
+  }
+>
+  <button
+    className="sc-nwx0we-0 gerLVX"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <svg
+      fill="none"
+      height="20"
+      shapeRendering="geometricPrecision"
+      vectorEffect="non-scaling-stroke"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M4.167 3.333a.833.833 0 00-.834.834v11.321l1.911-1.91a.833.833 0 01.59-.245h10a.833.833 0 00.833-.833V4.167a.833.833 0 00-.834-.834H4.167zM2.399 2.4a2.5 2.5 0 011.768-.732h11.666a2.5 2.5 0 012.5 2.5V12.5a2.5 2.5 0 01-2.5 2.5H6.18l-3.09 3.09a.833.833 0 01-1.422-.59V4.167A2.5 2.5 0 012.4 2.399z"
+        fill="#FFFFFF"
+        fillRule="evenodd"
+      />
+    </svg>
+    <span
+      className="sc-90c4yq-0 bmmsAZ"
+    >
+      Open Chat
+    </span>
+  </button>
+</div>
+`;

@@ -40,7 +40,7 @@ export const options = {
    * https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
    */
   wrap: ['nowrap', 'wrap', 'wrap-reverse'],
-  spaces: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl'],
+  spaces: ['0', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl'],
   borderRadiuses: ['xs', 'sm', 'lg'],
   borderColors: [
     'neutral-120',
@@ -66,4 +66,12 @@ export const options = {
   ],
   overflow: ['hidden', 'visible', 'scroll', 'auto'],
   alignments: ['left', 'center', 'right'],
+  whiteSpace: [
+    'normal',
+    'nowrap',
+    'pre',
+    'pre-wrap',
+    'pre-line',
+    'break-spaces',
+  ],
 }

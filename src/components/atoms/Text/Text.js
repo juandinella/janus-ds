@@ -16,12 +16,12 @@ const StyledText = styled.p.withConfig({ shouldForwardProp })`
 
 const Text = ({
   id,
-  type,
+  type = 'md',
   size,
   weight,
   alignment,
   transform,
-  color,
+  color = '900',
   lineClamp,
   children,
 }) => {
@@ -66,11 +66,6 @@ Text.propTypes = {
   color: PropTypes.oneOf(options.colors),
   /** Clamp text */
   lineClamp: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-}
-
-Text.defaultProps = {
-  type: 'p',
-  color: 'neutral-darker',
 }
 
 export default Text

@@ -8,6 +8,7 @@ export default {
   title: 'Molecules/MessageInput',
   component: MessageInput,
   args: {
+    placeholder: 'Type a message...',
     onSendMessage: (...args) => {
       console.log('Action from Storybook, args are: ', args)
     },

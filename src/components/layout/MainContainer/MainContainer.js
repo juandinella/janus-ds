@@ -9,7 +9,7 @@ import styles from './MainContainer.styles'
  */
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMainContainer = styled.section.withConfig({ shouldForwardProp })`
+const StyledMainContainer = styled.div.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
@@ -27,7 +27,5 @@ MainContainer.propTypes = {
   id: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
-
-MainContainer.defaultProps = {}
 
 export default MainContainer

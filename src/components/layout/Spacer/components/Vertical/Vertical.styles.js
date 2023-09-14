@@ -19,6 +19,6 @@ export default css`
     props.isPlayground &&
     css`
       border: 2px dashed;
-      border-color: var(--color-purple-600);
+      border-color: var(--color-neutral-900);
     `}
 `

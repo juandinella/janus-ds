@@ -1,13 +1,10 @@
 import { css } from 'styled-components'
 
 export default css`
-  background-color: var(--bg-base);
   width: 100%;
-  border-radius: var(--border-radius-xl);
   padding: var(--spacing-xs) var(--spacing-sm);
   max-height: 140px;
-  font-size: var(--font-size-md);
-  color: var(--text-color-neutral-darker);
+  font-size: var(--font-size-sm);
   flex-grow: 1;
   position: relative;
   font-family: inherit;
@@ -21,10 +18,11 @@ export default css`
   overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
   outline: 0 none;
+  border-radius: 10px;
 
-  &:focus-visible {
-    box-shadow:
-      0 0 0 2px white,
-      0 0 0 4px #e4ceff;
+  &:empty:not(:focus):before {
+    content: attr(placeholder);
+    color: var(--color-neutral-500);
+    font-size: var(--font-size-sm);
   }
 `

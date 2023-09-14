@@ -15,7 +15,7 @@ const StyledSpacerHorizontal = styled.div.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const Horizontal = ({ id, mobileSize, size, isPlayground }) => (
+const Horizontal = ({ id, mobileSize, size = '4', isPlayground = false }) => (
   <StyledSpacerHorizontal
     css={[spacerStyles, styles]}
     isPlayground={isPlayground}
@@ -37,11 +37,6 @@ Horizontal.propTypes = {
   isPlayground: PropTypes.bool,
   /** Spacer's id */
   id: PropTypes.string,
-}
-
-Horizontal.defaultProps = {
-  size: '4',
-  isPlayground: false,
 }
 
 export default Horizontal

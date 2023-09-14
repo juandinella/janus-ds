@@ -11,7 +11,6 @@ const componentProps = {
   id: 'unique_id',
   children: 'Soy un mensaje de prueba',
   variant: 'incoming',
-  position: 'single',
 }
 afterEach(cleanup)
 

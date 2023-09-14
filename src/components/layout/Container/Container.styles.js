@@ -25,7 +25,7 @@ export default css`
     props.isPlayground &&
     css`
       border: 2px dashed;
-      border-color: var(--color-purple-600);
+      border-color: var(--color-neutral-900);
       min-height: 100px;
     `}
 
@@ -68,6 +68,7 @@ export default css`
       `
     )
   }}
+
 
   ${(props) => {
     if (props.justifyContent) {
@@ -116,4 +117,22 @@ export default css`
       `
     }
   }}
+
+  ${(props) => {
+    if (props.overflow) {
+      const [overflowX, overflowY] = props.overflow
+        .split(',')
+        .map((s) => s.trim())
+
+      return css`
+        overflow: ${overflowX} ${overflowY};
+      `
+    }
+  }}
+
+  ${(props) =>
+    props.whiteSpace &&
+    css`
+      white-space: ${(props) => props.whiteSpace};
+    `}
 `

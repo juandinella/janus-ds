@@ -16,7 +16,7 @@ const StyledSpacer = styled.div.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const Spacer = ({ id, mobileSize, size, isPlayground }) => (
+const Spacer = ({ id, mobileSize, size = '4', isPlayground = false }) => (
   <StyledSpacer
     id={id}
     data-testid={id}
@@ -37,11 +37,6 @@ Spacer.propTypes = {
   isPlayground: PropTypes.bool,
   /** Spacer's id */
   id: PropTypes.string,
-}
-
-Spacer.defaultProps = {
-  size: '4',
-  isPlayground: false,
 }
 
 Spacer.Horizontal = Horizontal

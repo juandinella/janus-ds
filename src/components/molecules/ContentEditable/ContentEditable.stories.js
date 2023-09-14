@@ -8,7 +8,7 @@ export default {
   title: 'Molecules/ContentEditable',
   component: ContentEditable,
   args: {
-    children: 'Soy un text',
+    placeholder: 'Ask your question here...',
   },
   argTypes: {},
 }
