@@ -9,6 +9,7 @@ export default css`
   font-size: var(--font-size-sm);
   transition: all var(--transition-225);
   max-width: max-content;
+  color: var(--color-neutral-900);
 
   &:hover {
     background-color: var(--color-neutral-900);

@@ -25,4 +25,8 @@ export default css`
     color: var(--color-neutral-500);
     font-size: var(--font-size-sm);
   }
+
+  @supports (-webkit-touch-callout: none) {
+    font-size: 16px;
+  }
 `
