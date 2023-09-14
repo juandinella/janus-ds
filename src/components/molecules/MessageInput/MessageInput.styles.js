@@ -4,6 +4,7 @@ export default css`
   width: 100%;
   position: relative;
   padding: var(--spacing-xs);
+  border-top: 1px solid var(--color-neutral-200);
 
   > div {
     border: 1px solid var(--color-neutral-200);

@@ -1,8 +1,6 @@
 import { css } from 'styled-components'
 
 export default css`
-  border-top: 1px solid var(--color-neutral-200);
-  border-bottom: 1px solid var(--color-neutral-200);
   padding: var(--spacing-xs);
   width: 100%;
   height: 100%;

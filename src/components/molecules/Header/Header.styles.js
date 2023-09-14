@@ -7,4 +7,5 @@ export default css`
   width: 100%;
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+  border-bottom: 1px solid var(--color-neutral-200);
 `

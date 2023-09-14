@@ -22,6 +22,9 @@ const SuggestedQuestions = ({ id, questions }) => {
         flex
         gap="xxs"
         overflow="auto"
+        direction="column"
+        justifyContent="flex-end"
+        alignItems="flex-end"
         whiteSpace="nowrap"
         space="xs, 0"
       >

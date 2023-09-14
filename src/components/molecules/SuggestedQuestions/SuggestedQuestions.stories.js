@@ -6,7 +6,7 @@ const Template = getTemplate(SuggestedQuestions)
 
 let questionList = [
   {
-    children: 'Question number 1',
+    children: 'Question 1',
   },
   {
     children: 'Question number 2',

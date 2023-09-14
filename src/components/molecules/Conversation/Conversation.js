@@ -15,7 +15,7 @@ const StyledConversation = styled.div.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const Conversation = ({ id, messages }) => {
+const Conversation = ({ id, messages, children }) => {
   const lastMessageRef = useRef(null)
   const didScroll = useRef(false)
 
@@ -52,6 +52,7 @@ const Conversation = ({ id, messages }) => {
           </Container>
         ))}
       </Container>
+      {children}
     </StyledConversation>
   )
 }
