@@ -5,7 +5,7 @@ export default css`
   min-height: 100px;
   border: none;
   position: fixed;
-  height: 85vh;
+  max-height: 85vh;
   z-index: 999999;
   left: unset;
   bottom: 1rem;

@@ -17,9 +17,7 @@ const getStyles = ({ __sb } = {}) => ({
 export const decorators = [
   (Story, { parameters }) => (
     <GlobalProvider>
-      <div style={getStyles(parameters)}>
-        {Story()}
-      </div>
+      <div style={getStyles(parameters)}>{Story()}</div>
     </GlobalProvider>
   ),
 ]
@@ -28,6 +26,6 @@ export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   options: {
     showPanel: true,
-    panelPosition: "bottom",
+    panelPosition: 'bottom',
   },
 }
