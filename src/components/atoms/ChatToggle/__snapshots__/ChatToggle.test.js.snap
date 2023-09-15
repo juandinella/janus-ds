@@ -17,7 +17,7 @@ exports[`Storyshots Atoms/ChatToggle Default 1`] = `
   }
 >
   <button
-    className="sc-nwx0we-0 gerLVX"
+    className="sc-nwx0we-0 gnFNja"
     disabled={false}
     onClick={[Function]}
   >

@@ -20,6 +20,7 @@ exports[`Storyshots Atoms/Message Default 1`] = `
     className="sc-1kelln5-0 exuiBe"
     data-testid="test"
     id="test"
+    loading={false}
   >
     <span
       data-testid="test-children"
@@ -79,6 +80,7 @@ exports[`Storyshots Atoms/Message Outgoing 1`] = `
     className="sc-1kelln5-0 gsOApI"
     data-testid="test"
     id="test"
+    loading={false}
   >
     <span
       data-testid="test-children"
@@ -109,6 +111,7 @@ exports[`Storyshots Atoms/Message Variants 1`] = `
     className="sc-1kelln5-0 exuiBe"
     data-testid="test"
     id="test"
+    loading={false}
   >
     <span
       data-testid="test-children"
@@ -120,6 +123,7 @@ exports[`Storyshots Atoms/Message Variants 1`] = `
     className="sc-1kelln5-0 gsOApI"
     data-testid="test"
     id="test"
+    loading={false}
   >
     <span
       data-testid="test-children"

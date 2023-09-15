@@ -18,7 +18,7 @@ exports[`Storyshots Molecules/ContentEditable Default 1`] = `
 >
   <div
     aria-label="Ask your question here..."
-    className="sc-1p2qa2e-0 ggcIrv"
+    className="sc-1p2qa2e-0 jiBkaT"
     contentEditable={true}
     onBlur={[Function]}
     onPaste={[Function]}

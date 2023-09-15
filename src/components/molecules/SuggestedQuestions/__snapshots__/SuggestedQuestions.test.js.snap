@@ -17,22 +17,23 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
   }
 >
   <div
-    className="sc-1tbsf4n-0 lihcOl"
+    className="sc-1tbsf4n-0 hpmbQe"
   >
     <div
-      className="sc-1kqcgfr-0 fthHmC"
+      className="sc-1kqcgfr-0 hSdNZc"
+      direction="column"
       overflow="auto"
     >
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
-          Question number 1
+          Question 1
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -40,7 +41,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -48,7 +49,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -56,7 +57,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -64,7 +65,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -72,7 +73,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -80,7 +81,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -88,7 +89,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
@@ -96,7 +97,7 @@ exports[`Storyshots Molecules/SuggestedQuestions Default 1`] = `
         </span>
       </button>
       <button
-        className="sc-18ktvrn-0 kRLHHi"
+        className="sc-18ktvrn-0 hxGPnv"
         onClick={[Function]}
       >
         <span>
