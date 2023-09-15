@@ -22,6 +22,7 @@ export default css`
   white-space: pre-line;
   border-radius: var(--border-radius-md);
   line-height: 1.5;
+  word-break: break-word;
 
   ${(props) =>
     props.variant === 'incoming' &&
