@@ -9,10 +9,10 @@ export default css`
   &::-webkit-scrollbar {
     height: 4px;
     width: 4px;
-    background: var(--color-neutral-300);
+    background-color: var(--color-neutral-300);
   }
   &::-webkit-scrollbar-thumb:vertical {
-    background: var(--color-neutral-700);
+    background-color: var(--color-neutral-700);
     border-radius: 6px;
   }
 `

@@ -29,4 +29,14 @@ export default css`
   @supports (-webkit-touch-callout: none) {
     font-size: 16px;
   }
+
+  &::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background-color: var(--color-neutral-300);
+  }
+  &::-webkit-scrollbar-thumb:vertical {
+    background-color: var(--color-neutral-700);
+    border-radius: 6px;
+  }
 `
