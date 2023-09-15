@@ -13,7 +13,6 @@ const StyledContentEditable = styled.div.withConfig({ shouldForwardProp })`
 const ContentEditable = React.forwardRef(
   ({ id, onBlur, onChange, onKeyDown, placeholder, onInput }, ref) => {
     const handleBlur = () => {
-      console.log('gato Ref:', ref.current)
       if (ref && ref.current && onBlur) {
         onBlur(ref.current.innerHTML)
       }
