@@ -19,6 +19,7 @@ export default css`
   -webkit-line-break: after-white-space;
   outline: 0 none;
   border-radius: 10px;
+  padding-right: 30px;
 
   &:empty:not(:focus):before {
     content: attr(placeholder);
