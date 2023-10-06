@@ -3,19 +3,20 @@ name: Build
 on:
   push:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.build-publish.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
+
     steps:
-    - id: build-publish
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
       with:
-        path: dist/storybook
-        build_command: npm run build
+        node-version: '14'
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
