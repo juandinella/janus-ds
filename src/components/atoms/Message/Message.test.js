@@ -10,7 +10,7 @@ initStoryshots({
 const componentProps = {
   id: 'unique_id',
   children: 'Soy un mensaje de prueba',
-  variant: 'incoming',
+  variant: 'aiMessage',
 }
 afterEach(cleanup)
 

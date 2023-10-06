@@ -1,3 +1,3 @@
 export const options = {
-  variants: ['incoming', 'outgoing'],
+  variants: ['aiMessage', 'humanMessage'],
 }

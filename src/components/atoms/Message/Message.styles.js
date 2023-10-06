@@ -25,14 +25,14 @@ export default css`
   word-break: break-word;
 
   ${(props) =>
-    props.variant === 'incoming' &&
+    props.variant === 'aiMessage' &&
     css`
       color: var(--color-neutral-900);
       background-color: var(--color-neutral-100);
     `}
 
   ${(props) =>
-    props.variant === 'outgoing' &&
+    props.variant === 'humanMessage' &&
     css`
       color: ${getReadableTextColor(props.backgroundColor)};
       background-color: ${props.backgroundColor};

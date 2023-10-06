@@ -15,7 +15,7 @@ export default {
   component: Message,
   args: {
     children: 'Soy un mensaje de prueba',
-    variant: 'incoming',
+    variant: 'aiMessage',
     id: 'test',
     backgroundColor: '#171717',
   },
@@ -29,10 +29,10 @@ export default {
 
 export const Default = Template.bind({})
 
-export const Outgoing = {
+export const HumanMessage = {
   args: {
     backgroundColor: '#171717',
-    variant: 'outgoing',
+    variant: 'humanMessage',
   },
 }
 
