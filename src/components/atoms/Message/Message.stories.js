@@ -38,5 +38,3 @@ export const HumanMessage = {
 
 export const Variants = ListTemplate.bind({})
 Variants.args = { items: options.variants.map((variant) => ({ variant })) }
-
-export const Loading = { args: { loading: true } }

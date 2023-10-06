@@ -7,6 +7,7 @@ export { default as ScreenReaderText } from './components/atoms/ScreenReaderText
 export { default as SendButton } from './components/atoms/SendButton'
 export { default as SuggestedQuestion } from './components/atoms/SuggestedQuestion'
 export { default as Text } from './components/atoms/Text'
+export { default as Typing } from './components/atoms/Typing'
 
 // Layout components
 export { default as ChatWrapper } from './components/layout/ChatWrapper'

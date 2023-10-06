@@ -15,10 +15,7 @@ const StyledMessage = styled.div.withConfig({ shouldForwardProp })`
 `
 
 const Message = React.forwardRef(
-  (
-    { id, variant, children, backgroundColor = '#171717', loading = false },
-    ref,
-  ) => {
+  ({ id, variant, children, backgroundColor = '#171717' }, ref) => {
     return (
       <StyledMessage
         ref={ref}
@@ -26,17 +23,8 @@ const Message = React.forwardRef(
         data-testid={id}
         variant={variant}
         backgroundColor={backgroundColor}
-        loading={loading}
       >
-        {loading ? (
-          <>
-            <span />
-            <span />
-            <span />
-          </>
-        ) : (
-          <span data-testid={`${id}-children`}>{children}</span>
-        )}
+        <span data-testid={`${id}-children`}>{children}</span>
       </StyledMessage>
     )
   },
@@ -49,7 +37,6 @@ Message.propTypes = {
   children: PropTypes.node.isRequired,
   variant: PropTypes.oneOf(options.variants),
   backgroundColor: PropTypes.string,
-  loading: PropTypes.bool,
 }
 
 export default Message

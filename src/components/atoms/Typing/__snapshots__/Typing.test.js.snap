@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules/ContentEditable Default 1`] = `
+exports[`Storyshots Atoms/Typing Default 1`] = `
 <div
   style={
     {
@@ -17,15 +17,11 @@ exports[`Storyshots Molecules/ContentEditable Default 1`] = `
   }
 >
   <div
-    aria-label="Ask your question here..."
-    className="sc-1p2qa2e-0 hDdMmR"
-    contentEditable={true}
-    onBlur={[Function]}
-    onPaste={[Function]}
-    placeholder="Ask your question here..."
-    role="textbox"
-    spellCheck={false}
-    suppressContentEditableWarning="true"
-  />
+    className="sc-1irqryg-0 sc-1irqryg-1 fyFnNP hSjpO"
+  >
+    <span />
+    <span />
+    <span />
+  </div>
 </div>
 `;

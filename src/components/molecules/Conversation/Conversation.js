@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import styles from './Conversation.styles'
 import Message from '../../atoms/Message'
+import Typing from '../../atoms/Typing/Typing'
 import Container from '../../layout/Container'
 
 /**
@@ -15,7 +16,7 @@ const StyledConversation = styled.div.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const Conversation = ({ id, messages, children }) => {
+const Conversation = ({ id, messages, isMessageLoading, children }) => {
   const lastMessageRef = useRef(null)
   const didScroll = useRef(false)
 
@@ -51,6 +52,7 @@ const Conversation = ({ id, messages, children }) => {
             </Message>
           </Container>
         ))}
+        {isMessageLoading && <Typing />}
       </Container>
       {children}
     </StyledConversation>

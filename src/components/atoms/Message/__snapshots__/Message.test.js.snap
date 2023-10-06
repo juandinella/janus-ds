@@ -17,10 +17,9 @@ exports[`Storyshots Atoms/Message Default 1`] = `
   }
 >
   <div
-    className="sc-1kelln5-0 exuiBe"
+    className="sc-1kelln5-0 dTOcm"
     data-testid="test"
     id="test"
-    loading={false}
   >
     <span
       data-testid="test-children"
@@ -31,7 +30,7 @@ exports[`Storyshots Atoms/Message Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Atoms/Message Loading 1`] = `
+exports[`Storyshots Atoms/Message Human Message 1`] = `
 <div
   style={
     {
@@ -48,39 +47,9 @@ exports[`Storyshots Atoms/Message Loading 1`] = `
   }
 >
   <div
-    className="sc-1kelln5-0 guGDmx"
+    className="sc-1kelln5-0 cRizik"
     data-testid="test"
     id="test"
-    loading={true}
-  >
-    <span />
-    <span />
-    <span />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Atoms/Message Outgoing 1`] = `
-<div
-  style={
-    {
-      "alignContent": "flex-start",
-      "display": "flex",
-      "flexDirection": "column",
-      "flexWrap": "wrap",
-      "gap": "10px 30px",
-      "height": "100%",
-      "justifyContent": "flex-start",
-      "maxHeight": "auto",
-      "position": "relative",
-    }
-  }
->
-  <div
-    className="sc-1kelln5-0 gsOApI"
-    data-testid="test"
-    id="test"
-    loading={false}
   >
     <span
       data-testid="test-children"
@@ -108,10 +77,9 @@ exports[`Storyshots Atoms/Message Variants 1`] = `
   }
 >
   <div
-    className="sc-1kelln5-0 exuiBe"
+    className="sc-1kelln5-0 dTOcm"
     data-testid="test"
     id="test"
-    loading={false}
   >
     <span
       data-testid="test-children"
@@ -120,10 +88,9 @@ exports[`Storyshots Atoms/Message Variants 1`] = `
     </span>
   </div>
   <div
-    className="sc-1kelln5-0 gsOApI"
+    className="sc-1kelln5-0 cRizik"
     data-testid="test"
     id="test"
-    loading={false}
   >
     <span
       data-testid="test-children"

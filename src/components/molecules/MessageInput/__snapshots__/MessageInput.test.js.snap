@@ -24,7 +24,7 @@ exports[`Storyshots Molecules/MessageInput Default 1`] = `
     >
       <div
         aria-label="Type a message..."
-        className="sc-1p2qa2e-0 jiBkaT"
+        className="sc-1p2qa2e-0 hDdMmR"
         contentEditable={true}
         onBlur={[Function]}
         onInput={[Function]}
