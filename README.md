@@ -1,4 +1,4 @@
-# Janus: Janus Design System v0.01
+# Janus: Janus Design System v1.0.0
 
 ![Janus Cover](./public/cover.png)
 
