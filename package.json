@@ -4,6 +4,7 @@
   "description": "Janus Design System",
   "main": "dist/index.js",
   "scripts": {
+    "prepare": "husky install & npm run build",
     "tokens": "node ./scripts/build-tokens",
     "start": "npm run tokens && npm run storybook",
     "test": "jest src --ci",
