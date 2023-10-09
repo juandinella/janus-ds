@@ -26,6 +26,7 @@ const SendButton = ({
       data-testid={id}
       onClick={onClick || null}
       disabled={disabled}
+      type="submit"
     >
       <svg
         width="24"
