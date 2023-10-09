@@ -46,7 +46,7 @@ const Conversation = ({ id, messages, isMessageLoading, children }) => {
             <Message
               ref={index === messages.length - 1 ? lastMessageRef : null}
               id={message.id}
-              variant={message.variant}
+              variant={message.role}
             >
               {message.content}
             </Message>
