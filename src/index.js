@@ -21,6 +21,7 @@ export { default as Conversation } from './components/molecules/Conversation'
 export { default as Header } from './components/molecules/Header'
 export { default as MessageInput } from './components/molecules/MessageInput'
 export { default as SuggestedQuestions } from './components/molecules/SuggestedQuestions'
+export { default as Textarea } from './components/molecules/Textarea'
 
 // Provider
 export { default as DesignSystemProvider } from './providers/GlobalProvider'

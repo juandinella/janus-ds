@@ -6,7 +6,7 @@ export default css`
   padding: var(--spacing-xs);
   border-top: 1px solid var(--color-neutral-200);
 
-  > div {
+  textarea {
     border: 1px solid var(--color-neutral-200);
     border-radius: var(--border-radius-sm);
   }

@@ -1,23 +1,16 @@
 import isPropValid from '@emotion/is-prop-valid'
 import PropTypes from 'prop-types'
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import styles from './MessageInput.styles'
 import SendButton from '../../atoms/SendButton'
 import Container from '../../layout/Container'
-import ContentEditable from '../ContentEditable'
+import Textarea from '../Textarea'
 
 const shouldForwardProp = (prop) => isPropValid(prop)
-const StyledMessageInput = styled.div.withConfig({ shouldForwardProp })`
+const StyledMessageInput = styled.form.withConfig({ shouldForwardProp })`
   ${styles}
 `
-
-const processMessage = (html) => {
-  let message = html
-  message = message.replace(/<br\s*\/?>/g, '\n').replace(/&nbsp;/g, ' ')
-  message = message.replace(/<\/?[^>]+(>|$)/g, '')
-  return message.trim()
-}
 
 const MessageInput = ({
   id,
@@ -25,27 +18,27 @@ const MessageInput = ({
   onChange = () => null,
   placeholder,
 }) => {
+  const [message, setMessage] = useState('')
   const [disableButton, setDisableButton] = useState(true)
-  const ref = useRef(null)
 
   const sendMessage = () => {
-    const message = processMessage(ref.current.innerHTML)
-    if (message.length > 0) {
-      onSendMessage(message)
-      ref.current.innerHTML = ''
+    if (message.trim().length > 0) {
+      onSendMessage(message.trim())
+      setMessage('')
       setDisableButton(true)
     }
   }
 
-  const handleChange = () => {
-    const message = processMessage(ref.current.innerHTML)
-    setDisableButton(message.length === 0)
+  const handleChange = (e) => {
+    setMessage(e.target.value)
+    setDisableButton(e.target.value.trim().length === 0)
     if (onChange) {
-      onChange(message)
+      onChange(e.target.value)
     }
   }
 
-  const handleSendClick = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
     sendMessage()
   }
 
@@ -57,16 +50,16 @@ const MessageInput = ({
   }
 
   return (
-    <StyledMessageInput id={id} data-testid={id}>
+    <StyledMessageInput id={id} data-testid={id} onSubmit={handleSubmit}>
       <Container flex alignItems="flex-end">
-        <ContentEditable
-          ref={ref}
+        <Textarea
+          value={message}
           placeholder={placeholder}
+          onChange={handleChange}
           onKeyDown={handleKeyDown}
-          onInput={handleChange}
         />
         <span className="message-btn">
-          <SendButton onClick={handleSendClick} disabled={disableButton} />
+          <SendButton disabled={disableButton} />
         </span>
       </Container>
     </StyledMessageInput>
