@@ -10,19 +10,19 @@ initStoryshots({
 let conversationList = [
   {
     content: 'Hola Hola',
-    variant: 'aiMessage',
+    variant: 'assistant',
   },
   {
     content: 'This is a message, test testing',
-    variant: 'aiMessage',
+    variant: 'assistant',
   },
   {
     content: 'This is a message, test testing 😎',
-    variant: 'humanMessage',
+    variant: 'user',
   },
   {
     content: <a href="google.com">This is a link</a>,
-    variant: 'humanMessage',
+    variant: 'user',
   },
 ]
 

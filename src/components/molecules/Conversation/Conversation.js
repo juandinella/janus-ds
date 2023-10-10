@@ -40,7 +40,7 @@ const Conversation = ({ id, messages, isMessageLoading, children }) => {
             gap="xs"
             key={message.id}
             alignItems={
-              message.variant === 'aiMessage' ? 'flex-start' : 'flex-end'
+              message.variant === 'assistant' ? 'flex-start' : 'flex-end'
             }
           >
             <Message
