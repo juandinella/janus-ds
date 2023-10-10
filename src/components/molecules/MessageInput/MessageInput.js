@@ -17,6 +17,7 @@ const MessageInput = ({
   onSendMessage = () => null,
   onChange = () => null,
   placeholder,
+  value,
 }) => {
   const [disableButton, setDisableButton] = useState(true)
 
@@ -52,6 +53,7 @@ const MessageInput = ({
           placeholder={placeholder}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
+          value={value}
         />
         <span className="message-btn">
           <SendButton disabled={disableButton} />
@@ -64,6 +66,7 @@ const MessageInput = ({
 MessageInput.propTypes = {
   id: PropTypes.string,
   onSendMessage: PropTypes.func,
+  onSubmit: PropTypes.func,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
 }

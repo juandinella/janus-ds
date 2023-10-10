@@ -14,7 +14,7 @@ const StyledTextarea = styled.textarea.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const Textarea = ({ id, placeholder, onBlur, onChange, onKeyDown }) => {
+const Textarea = ({ id, placeholder, value, onBlur, onChange, onKeyDown }) => {
   const handleInput = (e) => {
     const textarea = e.target
     textarea.style.height = 'auto'
@@ -35,6 +35,7 @@ const Textarea = ({ id, placeholder, onBlur, onChange, onKeyDown }) => {
       onBlur={onBlur}
       onChange={handleInput}
       onKeyDown={onKeyDown}
+      value={value}
     />
   )
 }
