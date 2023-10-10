@@ -32,13 +32,15 @@ const MessageInput = ({
   const handleChange = (e) => {
     const text = e.target.value
     setDisableButton(text.trim().length === 0)
+
     if (onChange) {
-      onChange(text)
+      onChange(e)
     }
   }
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault()
       handleSubmit(e)
     }
   }
