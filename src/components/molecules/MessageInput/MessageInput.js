@@ -18,34 +18,28 @@ const MessageInput = ({
   onChange = () => null,
   placeholder,
 }) => {
-  const [message, setMessage] = useState('')
   const [disableButton, setDisableButton] = useState(true)
 
-  const sendMessage = () => {
-    if (message.trim().length > 0) {
-      onSendMessage(message.trim())
-      setMessage('')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const text = e.target.value || e.target.elements[0].value
+    if (text.trim().length > 0) {
+      onSendMessage(e)
       setDisableButton(true)
     }
   }
 
   const handleChange = (e) => {
-    setMessage(e.target.value)
-    setDisableButton(e.target.value.trim().length === 0)
+    const text = e.target.value
+    setDisableButton(text.trim().length === 0)
     if (onChange) {
-      onChange(e.target.value)
+      onChange(text)
     }
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    sendMessage()
   }
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault()
-      sendMessage()
+      handleSubmit(e)
     }
   }
 
@@ -53,7 +47,6 @@ const MessageInput = ({
     <StyledMessageInput id={id} data-testid={id} onSubmit={handleSubmit}>
       <Container flex alignItems="flex-end">
         <Textarea
-          value={message}
           placeholder={placeholder}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
