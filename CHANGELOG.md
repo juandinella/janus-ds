@@ -8,9 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ## [1.0.1] - 2023-10-10
 
+### Added
+
+- onQuestionSelected
+- CI for build
 ### Changed
 
 - Change ContentEditable for Textarea
+- Role instead of variant
+
 
 [Unreleased]: https://github.com/juandinella/janus-ds/-/compare/v1.0.1...master
 [1.0.1]: https://github.com/juandinella/janus-ds/-/tags/v1.0.1
