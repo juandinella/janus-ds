@@ -15,7 +15,7 @@ const StyledSuggestedQuestions = styled.div.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const SuggestedQuestions = ({ id, questions }) => {
+const SuggestedQuestions = ({ id, questions, onQuestionSelected }) => {
   return (
     <StyledSuggestedQuestions id={id} data-testid={id}>
       <Container
@@ -29,9 +29,14 @@ const SuggestedQuestions = ({ id, questions }) => {
         space="xs, 0"
       >
         {questions.map((question) => (
-          <SuggestedQuestion key={question.id} id={question.id}>
-            {question.children}
-          </SuggestedQuestion>
+          <SuggestedQuestion
+            key={question.id}
+            id={question.id}
+            text={question.text}
+            onClick={() => {
+              if (onQuestionSelected) onQuestionSelected(question.id)
+            }}
+          />
         ))}
       </Container>
     </StyledSuggestedQuestions>
@@ -42,7 +47,14 @@ SuggestedQuestions.displayName = 'SuggestedQuestions'
 
 SuggestedQuestions.propTypes = {
   id: PropTypes.string,
-  questions: PropTypes.node,
+  onQuestionSelected: PropTypes.func,
+  questions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      onClick: PropTypes.func,
+      text: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 }
 
 export default SuggestedQuestions

@@ -13,10 +13,10 @@ const StyledSuggestedQuestion = styled.button.withConfig({ shouldForwardProp })`
   ${styles}
 `
 
-const SuggestedQuestion = ({ id, children, onClick = () => null }) => {
+const SuggestedQuestion = ({ id, text, onClick = () => null }) => {
   return (
-    <StyledSuggestedQuestion id={id} data-testid={id} onClick={onClick || null}>
-      <span>{children}</span>
+    <StyledSuggestedQuestion id={id} data-testid={id} onClick={onClick}>
+      <span>{text}</span>
     </StyledSuggestedQuestion>
   )
 }
@@ -25,7 +25,7 @@ SuggestedQuestion.displayName = 'SuggestedQuestion'
 
 SuggestedQuestion.propTypes = {
   id: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 }
 

@@ -9,10 +9,10 @@ initStoryshots({
 
 let questionList = [
   {
-    children: 'Question number 1',
+    text: 'Question number 1',
   },
   {
-    children: 'Question number 2',
+    text: 'Question number 2',
   },
 ]
 const componentProps = {

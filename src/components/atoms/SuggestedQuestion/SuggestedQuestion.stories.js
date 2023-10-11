@@ -8,7 +8,7 @@ export default {
   title: 'Atoms/SuggestedQuestion',
   component: SuggestedQuestion,
   args: {
-    children: 'What is Janus?',
+    text: 'What is Janus?',
   },
   argTypes: {},
 }
