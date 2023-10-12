@@ -15,4 +15,10 @@ export default css`
     background-color: var(--color-neutral-900);
     color: white;
   }
+
+  &:focus-visible {
+    box-shadow:
+      0 0 0 2px white,
+      0 0 0 4px #e5e5e5;
+  }
 `

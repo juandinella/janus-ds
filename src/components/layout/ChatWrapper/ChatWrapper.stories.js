@@ -11,57 +11,36 @@ const Template = getTemplate(ChatWrapper)
 let conversationList = [
   {
     content: 'Hola Hola',
-    variant: 'assistant',
+    role: 'assistant',
   },
   {
     content: 'This is a message, test testing',
-    variant: 'assistant',
+    role: 'assistant',
   },
   {
     content:
       'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    variant: 'user',
+    role: 'user',
   },
   {
     content: 'This is a message, test testing 😎',
-    variant: 'user',
+    role: 'user',
   },
   {
     content: <a href="google.com">This is a link</a>,
-    variant: 'user',
+    role: 'user',
   },
 ]
 
 let questionList = [
   {
-    children: 'Question number 1',
+    text: 'Question number 1',
   },
   {
-    children: 'Question number 2',
+    text: 'Question number 2',
   },
   {
-    children: 'Question number 3',
-  },
-  {
-    children: 'Question number 4',
-  },
-  {
-    children: 'Question number 5',
-  },
-  {
-    children: 'Question number 6',
-  },
-  {
-    children: 'Question number 7',
-  },
-  {
-    children: 'Question number 8',
-  },
-  {
-    children: 'Question number 9',
-  },
-  {
-    children: 'Question number 10',
+    text: 'Question number 3',
   },
 ]
 

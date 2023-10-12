@@ -16,7 +16,6 @@ export { default as MainContainer } from './components/layout/MainContainer'
 export { default as Spacer } from './components/layout/Spacer'
 
 // Molecules components
-export { default as ContentEditable } from './components/molecules/ContentEditable'
 export { default as Conversation } from './components/molecules/Conversation'
 export { default as Header } from './components/molecules/Header'
 export { default as MessageInput } from './components/molecules/MessageInput'

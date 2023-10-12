@@ -6,7 +6,7 @@ export default css`
   min-height: 100px;
   border: none;
   position: fixed;
-  max-height: 85vh;
+  height: 824px;
   z-index: 999999;
   left: unset;
   right: 1rem;

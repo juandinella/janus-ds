@@ -32,7 +32,7 @@ const Conversation = ({ id, messages, isMessageLoading, children }) => {
 
   return (
     <StyledConversation id={id} data-testid={id}>
-      <Container flex direction="column" gap="xxs">
+      <Container flex direction="column" gap="xs">
         {messages.map((message, index) => (
           <Container
             flex
